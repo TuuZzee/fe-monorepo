@@ -1,0 +1,23 @@
+# name: Cloudflare worker routing - (Paired with 2 cloudflare projects)
+
+# on:
+#   workflow_dispatch:
+#     if: contains('["TuuZzee"]', github.actor)
+#   push:
+#     branches: [ main, develop ]
+#     paths:
+#     - '.github/workflows/clWorkerDeployWebRouting.yml'
+#     - 'packages/workers/fe-cl-web-routing/**'
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     name: Deploy
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: Publish worker to Cloudflare
+#         uses: cloudflare/wrangler-action@1.3.0
+#         with:
+#           apiToken: ${{ secrets.CF_API_TOKEN }}
+#           environment: ${{ github.ref == 'refs/heads/main' && 'production' || 'stg' }}
+#           workingDirectory: 'packages/workers/fe-cl-web-routing'

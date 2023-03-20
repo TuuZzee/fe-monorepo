@@ -1,0 +1,11 @@
+{
+  "name": "fe-cl-admin-google-groups",
+  "description": "Cloudflare worker for google group check/validation",
+  "main": "index.js",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "deploy": "echo 'Deploy version:' $npm_package_version"
+  },
+  "license": "MIT"
+}

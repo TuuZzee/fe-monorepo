@@ -1,0 +1,5 @@
+{
+  "*.{js,jsx,ts,tsx,css,json,md}": "prettier --write",
+  "./**/styled.js": "stylelint",
+  "./packages/**/*.{js,jsx}": "yarn test:staged"
+}

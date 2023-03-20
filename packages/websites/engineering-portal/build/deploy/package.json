@@ -1,0 +1,9 @@
+{
+  "name": "@namespace/web-engineering-portal",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "deploy": "echo 'Deploy version:' $npm_package_version"
+  }
+}

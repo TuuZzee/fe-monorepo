@@ -1,0 +1,13 @@
+account_id = "account_id"
+compatibility_date = "2022-01-25"
+name = "fe-cl-web-routing"
+route = ""
+type = "javascript"
+workers_dev = true
+zone_id = "zone_id"
+
+[env.stg]
+vars = { ENVIRONMENT = "stg", PAGES_PROJECT = "https://fe-stg-website.dev", PAGES_LEGACY_PROJECT = "https://fe-stg-legacy-website.dev" }
+
+[env.production]
+vars = { ENVIRONMENT = "production", PAGES_PROJECT = "https://fe-prod-website.dev", PAGES_LEGACY_PROJECT = "https://fe-prod-legacy-website.dev" }

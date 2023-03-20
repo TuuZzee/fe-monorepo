@@ -1,0 +1,22 @@
+# name: Storybook Build and push to deploy repository Worflow
+
+# on:
+#   workflow_dispatch:
+#     if: contains('["TuuZzee"]', github.actor)
+  # push:
+  #   branches: [ develop ]
+  #   paths:
+  #     - '.github/workflows/clPageBuildPushStorybook.yml'
+  #     - 'packages/storybook/**'
+  #     - 'packages/shared/**'
+  #     - '!packages/**/*.md'
+
+# jobs:
+#   build:
+#     uses: TuuZzee/actions-monorepo/.github/workflows/fe-build-push.yaml@main # ./fe-build-push.yaml - create parent monorepo and move that action whitin to be able to call from here
+#     secrets:
+#       CLOUDBOT_GITHUB_TOKEN: ${{ secrets.CLOUDBOT_GITHUB_TOKEN }}
+#     with:
+#       project: 'storybook'
+#       source-env-path: 'packages/storybook/build'
+#       dest-env-path: 'packages/storybook'

@@ -1,0 +1,7 @@
+name = "fe-cl-admin-google-groups"
+account_id = "d9495944cce818dd0a4a93d43d0a6e79"
+main = "src/index.js"
+compatibility_date = "2022-07-13"
+workers_dev = true
+usage_model = "unbound"
+send_metrics = false

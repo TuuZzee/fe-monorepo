@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/sf-ui-display');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+
+  --primary: #27b4eb;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+  margin: 20px;
+  gap: 20px;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.box > * {
+  flex: 1 1 160px;
+  margin: 20px;
+}
+
+.box > div {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.whiteColorIcon > svg {
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  width: fit-content;
+}

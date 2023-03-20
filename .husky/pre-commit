@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# [Note]: we had to move the eslint out from lintstaged due to custom eslint config from namespaces
+lerna run jsLint --parallel --since HEAD
+yarn pre-commit

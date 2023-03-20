@@ -1,0 +1,26 @@
+# Run Linters for code checks on every PR open (Eslint and StyleLint)
+name: Codebase Checker
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches: [develop]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '16.17.1'
+        cache: 'yarn'
+    - run: yarn install
+
+    - name: Validate Javascript files with Eslint
+      run: yarn jsLint
+
+    - name: Validate CSS and Styled Component code with StyleLint
+      run: yarn cssLint

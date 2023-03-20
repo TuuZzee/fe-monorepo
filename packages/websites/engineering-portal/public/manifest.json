@@ -1,0 +1,7 @@
+{
+  "name": "Cloud Engineering Portal",
+  "short_name": "EngineeringPortal",
+  "icons": [],
+  "start_url": "/",
+  "display": "standalone"
+}

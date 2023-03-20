@@ -1,0 +1,48 @@
+# To be used in read only deployment repository
+
+# name: Cloudflare Page deployment notifier
+
+# on: push
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     permissions:
+#       contents: read
+#       deployments: write
+#     steps:
+#     - uses: actions/checkout@v2
+
+#     - name: Wait for CF Pages
+#       id: cf-pages
+#       uses: WalshyDev/cf-pages-await@v1
+#       with:
+#         apiToken: ${{ secrets.CF_PAGES_API_TOKEN }}
+#         accountId: ${{ secrets.CF_ACCOUNT_ID }}
+#         project: fe-cl-page-project
+#         commitHash: ${{ github.sha }}
+
+#     - name: Notify on success
+#       if: ${{ steps.cf-pages.outputs.success == 'true' }}
+#       uses: slackapi/slack-github-action@v1.22.0
+#       env:
+#         SLACK_WEBHOOK_URL: ${{ secrets.FE_DEPLOYMENT_SLACK_WEBHOOK_URL }}
+#         SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+#       with:
+#         payload: |
+#           {
+#             "text": ":ship: `fe-cl-page-project` ${{ steps.cf-pages.outputs.environment }} CF Pages Deployment\nAlias/url: ${{ steps.cf-pages.outputs.alias }}\nDeployment: <https://dash.cloudflare.com/acount_id/pages/view/fe-cl-page-project/${{ steps.cf-pages.outputs.id }}|${{ steps.cf-pages.outputs.id }}> was successful.",
+#             "commit": ${{ toJSON(github.event.head_commit.message) }}
+#           }
+#     - name: Notify on failure
+#       if: ${{ steps.cf-pages.outputs.success == 'false' }}
+#       uses: slackapi/slack-github-action@v1.22.0
+#       env:
+#         SLACK_WEBHOOK_URL: ${{ secrets.FE_DEPLOYMENT_SLACK_WEBHOOK_URL }}
+#         SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+#       with:
+#         payload: |
+#           {
+#             "text": ":boom: `fe-cl-page-project` ${{ steps.cf-pages.outputs.environment }} CF Pages Deployment\nDeployment: <https://dash.cloudflare.com/acount_id/pages/view/fe-cl-page-project/${{ steps.cf-pages.outputs.id }}|${{ steps.cf-pages.outputs.id }}> has failed.",
+#             "commit": ${{ toJSON(github.event.head_commit.message) }}
+#           }

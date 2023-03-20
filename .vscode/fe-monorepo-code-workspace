@@ -1,0 +1,76 @@
+{
+  "folders": [
+    {
+      "name": "✨ fe-monorepo",
+      "path": ".."
+    },
+    {
+      "name": "🚀 @namespace/web/engineering-portal",
+      "path": "../packages/websites/engineering-portal"
+    },
+    {
+      "name": "🚀 @namespace/web/template",
+      "path": "../packages/websites/web-template"
+    },
+    {
+      "name": "📚 Storybook",
+      "path": "../packages/storybook"
+    },
+    {
+      "name": "🔥 @legacy/",
+      "path": "../legacy/"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      ".babelrc": true,
+      ".codeclimate.yml": true,
+      ".editorconfig": true,
+      ".eslintignore": true,
+      ".eslintrc.js": true,
+      ".gitattributes": true,
+      ".gitignore": true,
+      ".lintstagedrc.json": true,
+      ".next/": true,
+      ".prettierignore": true,
+      ".prettierrc": true,
+      ".snyk": true,
+      ".stylelintignore": true,
+      ".stylelintrc": true,
+      "babel.config.js": true,
+      "commitlint.config.js": true,
+      "jest.config.js": true,
+      "jest.setup.js": true,
+      "node_modules/": true,
+      "out/": true,
+      "package-lock.json": true,
+      "public/": true,
+      "readme.md": true,
+      "yarn-error.log": true,
+      "yarn.lock": true
+    },
+    "search.exclude": {
+      "**/.git": true,
+      "**/node_modules": true,
+      "**/package-lock.json": true,
+      "**/yarn.lock": true,
+      "**/.next": true,
+      "**/out": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
+      "esbenp.prettier-vscode",
+      "folke.vscode-monorepo-workspace",
+      "hookyqr.beautify",
+      "jpoissonnier.vscode-styled-components",
+      "junhan.auto-rename-tag",
+      "mikestead.dotenv",
+      "shd101wyy.markdown-preview-enhanced",
+      "stylelint.vscode-stylelint",
+      "wix.glean"
+    ]
+  }
+}

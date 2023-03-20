@@ -1,0 +1,11 @@
+{
+  "name": "fe-cl-web-routing",
+  "description": "Cloudflare worker for domain routing, legacy / new",
+  "main": "index.js",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "deploy": "echo 'Deploy version:' $npm_package_version"
+  },
+  "license": "MIT"
+}
