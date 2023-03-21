@@ -1,0 +1,7 @@
+{
+  "name": "Web App Micro-frontend Container service on Next.js",
+  "short_name": "web-app-micro-fe-container",
+  "icons": [],
+  "start_url": "/",
+  "display": "standalone"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "@namespace/web-app-micro-fe-shared",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "jsLint": "eslint --fix '**/*.js'",
+    "proxy:api": "yarn lcp --proxyUrl https://stg-some_api_domain.com --proxyPartial api --port 8300",
+    "start:proxies": "concurrently -n web-app-micro-fe-shared- yarn:proxy:*",
+    "start:prod-proxies": "concurrently -n web-app-micro-fe-shared- yarn:prod-proxy:*"
+  },
+  "dependencies": {
+    "@namespace/web-shared": "0.1.0",
+    "@namespace/storybook": "1.0.0"
+  },
+  "peerDependencies": {
+    "@next/font": "^13.2.4",
+    "@testing-library/jest-dom": "^5.16.5",
+    "axios-retry": "^3.4.0",
+    "axios": "^1.3.4",
+    "framer-motion": "^10.2.4",
+    "immer": "^9.0.19",
+    "jest-fail-on-console": "^3.0.2",
+    "jest-styled-components": "^7.1.1",
+    "localforage": "^1.10.0",
+    "lodash": "^4.17.21",
+    "next-redux-wrapper": "^8.1.0",
+    "next": "^13.2.4",
+    "prop-types": "^15.8.1",
+    "qs": "^6.11.1",
+    "react-dom": "^18.2.0",
+    "react-intl": "^6.2.10",
+    "react-redux-toastr": "^7.6.11",
+    "react-redux": "^8.0.4",
+    "react": "^18.2.0",
+    "redux": "^4.2.1",
+    "rsuite": "^5.28.2",
+    "styled-components": "^5.3.8"
+  }
+}

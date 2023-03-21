@@ -1,4 +1,4 @@
 export default {
   isStandalone: false,
-  serviceName: 'Web-Shared',
+  serviceName: 'web-shared',
 };

@@ -18,8 +18,8 @@ import constants from './constants';
 export const authenticationFailed = 'authentication_fail';
 export const clientTokenStorageId = 'clientTokens';
 
-const { API } = constants;
-const timeout = parseInt(constants.API.timeout, 10);
+const { api } = constants;
+const timeout = parseInt(api.timeout, 10);
 
 const setClientTokenData = async tokens => {
   await localforage.setItem(clientTokenStorageId, JSON.stringify({ ...tokens }));
@@ -36,7 +36,7 @@ const clearSession = async () => {
 };
 
 const requestAPI = axios.create({
-  baseURL: `${API.host}/`,
+  baseURL: `${api.host}/`,
   headers: { 'Content-Type': 'application/json' },
   timeout,
   paramsSerializer: {

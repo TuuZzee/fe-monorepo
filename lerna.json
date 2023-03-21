@@ -2,6 +2,7 @@
   "packages": [
     "packages/*",
     "packages/websites/*",
+    "packages/websites/app-micro-fe/*",
     "packages/workers/*"
   ],
   "version": "independent",

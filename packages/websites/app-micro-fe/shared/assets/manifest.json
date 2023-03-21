@@ -1,0 +1,7 @@
+{
+  "name": "Web Template service on Next.js",
+  "short_name": "Web Template",
+  "icons": [],
+  "start_url": "/",
+  "display": "standalone"
+}

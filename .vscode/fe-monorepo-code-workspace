@@ -5,11 +5,15 @@
       "path": ".."
     },
     {
-      "name": "🚀 @namespace/web/engineering-portal",
+      "name": "🚀 @namespace/web-app-micro-fe",
+      "path": "../packages/websites/app-micro-fe"
+    },
+    {
+      "name": "🚀 @namespace/web-engineering-portal",
       "path": "../packages/websites/engineering-portal"
     },
     {
-      "name": "🚀 @namespace/web/template",
+      "name": "🚀 @namespace/web-template",
       "path": "../packages/websites/web-template"
     },
     {
