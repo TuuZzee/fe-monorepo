@@ -1,21 +1,23 @@
 import React, { useState } from 'react';
 
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import { connect, useDispatch } from 'react-redux';
 import { Divider, FlexboxGrid, Form, List } from 'rsuite';
 
-import { Input, Button } from '@namespace/storybook/src/components/atoms';
+import { Input, LargeButton } from '@namespace/storybook/src/components/atoms';
 
 import { addTodo, removeTodo } from '../../redux/modules/todosTemplate';
 
 import TodoItem from './TodoItem';
 
-const Todo = function ({ todosTemplate }) {
+const Todo = function ({ todos }) {
+  const dispatch = useDispatch();
+
   const [text, changeText] = useState('');
 
   const handleAddTodo = () => {
     if (text !== '') {
-      addTodo(text);
+      dispatch(addTodo(text));
       changeText('');
     }
   };
@@ -34,21 +36,25 @@ const Todo = function ({ todosTemplate }) {
               <Input
                 helperText="Required"
                 label="Add ToDo:"
-                name="addTodoInput"
+                name="add-todo"
                 onChange={handleTextChange}
                 placeholder=""
                 value={text}
               />
             </Form.Group>
             <Form.Group>
-              <Button onClick={handleAddTodo}>Submit</Button>
+              <LargeButton onClick={handleAddTodo}>Submit</LargeButton>
             </Form.Group>
           </Form>
           <br />
           <div>
             <List>
-              {todosTemplate.map((todo, i) => (
-                <TodoItem key={`#${i.toString()}-todo`} remove={removeTodo} todo={todo} />
+              {todos.map((todo, i) => (
+                <TodoItem
+                  handleClick={() => dispatch(removeTodo(todo))}
+                  key={`#${i.toString()}-todo`}
+                  todo={todo}
+                />
               ))}
             </List>
           </div>
@@ -60,11 +66,9 @@ const Todo = function ({ todosTemplate }) {
 };
 
 Todo.propTypes = {
-  todosTemplate: PropTypes.arrayOf(PropTypes.shape({ text: PropTypes.string })),
+  todos: PropTypes.arrayOf(PropTypes.shape({ text: PropTypes.string })),
 };
 
-Todo.defaultProps = {
-  todosTemplate: [],
-};
+Todo.defaultProps = { todos: [] };
 
-export default connect(({ todosTemplate }) => ({ todosTemplate }), { addTodo, removeTodo })(Todo);
+export default connect(({ todosTemplate }) => ({ todos: todosTemplate }))(Todo);

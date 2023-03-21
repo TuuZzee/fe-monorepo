@@ -4,7 +4,7 @@ import { useIntl } from 'react-intl';
 import { connect } from 'react-redux';
 
 import { TemplateTitle, TemplateWrapper } from './styled';
-import Todo from './Todo';
+import Todos from './Todos';
 
 const Template = function () {
   const intl = useIntl();
@@ -12,7 +12,7 @@ const Template = function () {
   return (
     <TemplateWrapper>
       <TemplateTitle>{intl.messages['template.title']}</TemplateTitle>
-      <Todo />
+      <Todos />
     </TemplateWrapper>
   );
 };

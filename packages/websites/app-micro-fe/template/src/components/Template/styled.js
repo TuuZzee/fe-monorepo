@@ -10,4 +10,8 @@ export const TemplateTitle = styled.h3`
 
 export const TemplateWrapper = styled.div`
   position: relative;
+
+  form {
+    width: 335px;
+  }
 `;

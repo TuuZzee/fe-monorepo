@@ -1,5 +1,5 @@
 export default {
   template: {
-    title: 'Web-Micro-Fe-Template app',
+    title: 'Web-Micro-Fe-Template TodosTemplate',
   },
 };

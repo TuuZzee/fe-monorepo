@@ -3,11 +3,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, List } from 'rsuite';
 
-const TodoItem = function ({ todo, remove }) {
+const TodoItem = function ({ todo, handleClick }) {
   return (
     <List.Item style={{ listStyle: 'none' }}>
       {todo.text}
-      <Button onClick={() => remove(todo)} type="button">
+      <Button onClick={handleClick} type="button">
         x
       </Button>
     </List.Item>
@@ -15,12 +15,8 @@ const TodoItem = function ({ todo, remove }) {
 };
 
 TodoItem.propTypes = {
-  todo: PropTypes.shape({ text: PropTypes.string }),
-  remove: PropTypes.func.isRequired,
-};
-
-TodoItem.defaultProps = {
-  todo: {},
+  todo: PropTypes.shape({ text: PropTypes.string }).isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default TodoItem;

@@ -10,4 +10,8 @@ export const PostsTitle = styled.h3`
 
 export const PostsWrapper = styled.div`
   position: relative;
+
+  form {
+    width: 335px;
+  }
 `;

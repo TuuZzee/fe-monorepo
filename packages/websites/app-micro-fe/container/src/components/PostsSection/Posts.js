@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import { connect, useDispatch } from 'react-redux';
 import { Divider, FlexboxGrid, Form, List } from 'rsuite';
 
 import { Input, Button } from '@namespace/storybook/src/components/atoms';
@@ -11,11 +11,13 @@ import { addPost, removePost } from '../../redux/modules/posts';
 import PostItem from './PostItem';
 
 const Post = function ({ posts }) {
+  const dispatch = useDispatch();
+
   const [text, changeText] = useState('');
 
   const handleAddPost = () => {
     if (text !== '') {
-      addPost(text);
+      dispatch(addPost(text));
       changeText('');
     }
   };
@@ -33,7 +35,7 @@ const Post = function ({ posts }) {
             <Form.Group>
               <Input
                 helperText="Required"
-                label="Add ToDo:"
+                label="Add Post:"
                 name="addPostInput"
                 onChange={handleTextChange}
                 placeholder=""
@@ -41,14 +43,18 @@ const Post = function ({ posts }) {
               />
             </Form.Group>
             <Form.Group>
-              <Button onClick={handleAddPost}>Submit</Button>
+              <Button onClick={handleAddPost}>Submit Post</Button>
             </Form.Group>
           </Form>
           <br />
           <div>
             <List>
-              {posts.map((todo, i) => (
-                <PostItem key={`#${i.toString()}-todo`} remove={removePost} todo={todo} />
+              {posts.map((post, i) => (
+                <PostItem
+                  handleClick={() => dispatch(removePost(post))}
+                  key={`#${i.toString()}-post`}
+                  post={post}
+                />
               ))}
             </List>
           </div>
@@ -65,4 +71,4 @@ Post.propTypes = {
 
 Post.defaultProps = { posts: [] };
 
-export default connect(({ posts }) => ({ posts }), { addPost, removePost })(Post);
+export default connect(({ posts }) => ({ posts }))(Post);

@@ -6,8 +6,8 @@ import LocaleAndToastrWrapper from '@namespace/web-shared/components/LocaleAndTo
 import { LocaleContext } from '@namespace/web-shared/contexts/LocaleContext';
 import { flattenMessages } from '@namespace/web-shared/utils/intl-i18n';
 
-import Template from '@/components/Template';
-import wordingPage from '@/locale/template';
+import Template from '../src/components/Template';
+import wordingPage from '../src/locale/template';
 
 const TemplatePage = function () {
   const { currentLocale } = useContext(LocaleContext);
