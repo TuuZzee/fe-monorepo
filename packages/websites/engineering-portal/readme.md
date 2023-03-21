@@ -40,9 +40,9 @@ Production:
 
 Staging:
 
-- [Cloudflare page project](https://dash.cloudflare.com/[account_id]/pages/view/fe-stg-admin-portal)
-- [Child repository](https://github.com/TuuZzee/fe-stg-admin-portal)
-- https://stg-admin-portal.[org_domain].com/
+- [Cloudflare page project](https://dash.cloudflare.com/[account_id]/pages/view/fe-stg-engineering-portal)
+- [Child repository](https://github.com/TuuZzee/fe-stg-engineering-portal)
+- https://stg-engineering-portal.[org_domain].com/
 - Build can be triggered with a push on stg-engineering-portal branch and on develop branch
 
 ```bash
