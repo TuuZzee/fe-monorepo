@@ -37,9 +37,6 @@ So here comes this monorepo infrastructure for frontend service/project. This al
 tech stack and to used across multiple service/project. It also allow to keep trace of other project
 that might not yet share the same stack in a specific namespace in `/legacy`. More on this later.
 
-For more information about the infrastructure can be found
-[here](https://bitfinder.atlassian.net/l/c/Wu16keVP).
-
 ## Requirements
 
 You need to have `yarn` installed. Recommend using [n](https://github.com/tj/n) to manage node
@@ -62,9 +59,7 @@ npm install --global lerna
 
 This workspace is build using [Lerna](https://github.com/lerna/lerna) and
 [Yarn workspaces](https://yarnpkg.com/features/workspaces). Lerna has a lot of available commands
-and tools, especially for packages publishing (open source),
-[here](https://bitfinder.atlassian.net/l/c/EvL8Tetn) is the exhaustive list that we will mainly use
-(in private repository mode).
+and tools, especially for packages publishing (open source)
 
 ```sh
 # Clone the repository
