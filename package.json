@@ -4,6 +4,7 @@
   "private": true,
   "workspaces": [
     "packages/*",
+    "packages/websites/app-micro-fe/*",
     "packages/websites/*",
     "packages/workers/*"
   ],

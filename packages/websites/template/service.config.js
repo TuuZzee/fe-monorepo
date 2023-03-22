@@ -1,4 +1,4 @@
 export default {
   isStandalone: true,
-  serviceName: 'Web-Template',
+  serviceName: 'web-template',
 };

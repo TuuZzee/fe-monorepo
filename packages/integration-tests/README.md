@@ -1,1 +1,1 @@
-# legacy namespace
+# Integration-tests namespace

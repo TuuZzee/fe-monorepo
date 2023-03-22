@@ -1,4 +1,4 @@
 export default {
   isStandalone: true,
-  serviceName: 'Engineering Portal',
+  serviceName: 'web-engineering-portal',
 };

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["./src/components/*"],
+      "@/contexts/*": ["./src/contexts/*"],
+      "@/locale/*": ["./src/locale/*"],
+      "@/reduxModules/*": ["./src/redux/modules/*"],
+      "@/requests/*": ["./src/requests/*"],
+      "@/service": ["./service.config.js"],
+      "@/styles/*": ["./src/styles/*"],
+      "@/styledComponents/*": ["./src/styles/styledComponents/*"],
+      "@/utils/*": ["./src/utils/*"]
+    }
+  }
+}

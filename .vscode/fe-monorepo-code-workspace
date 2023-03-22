@@ -5,15 +5,19 @@
       "path": ".."
     },
     {
-      "name": "🚀 @namespace/web/engineering-portal",
+      "name": "🚀 @namespace/web-app-micro-fe",
+      "path": "../packages/websites/app-micro-fe"
+    },
+    {
+      "name": "🚀 @namespace/web-engineering-portal",
       "path": "../packages/websites/engineering-portal"
     },
     {
-      "name": "🚀 @namespace/web/template",
-      "path": "../packages/websites/web-template"
+      "name": "🚀 @namespace/web-template",
+      "path": "../packages/websites/template"
     },
     {
-      "name": "📚 Storybook",
+      "name": "📚 @namespace/storybook",
       "path": "../packages/storybook"
     },
     {
@@ -23,31 +27,32 @@
   ],
   "settings": {
     "files.exclude": {
-      ".babelrc": true,
-      ".codeclimate.yml": true,
-      ".editorconfig": true,
-      ".eslintignore": true,
-      ".eslintrc.js": true,
-      ".gitattributes": true,
-      ".gitignore": true,
-      ".lintstagedrc.json": true,
-      ".next/": true,
-      ".prettierignore": true,
-      ".prettierrc": true,
-      ".snyk": true,
-      ".stylelintignore": true,
-      ".stylelintrc": true,
-      "babel.config.js": true,
-      "commitlint.config.js": true,
-      "jest.config.js": true,
-      "jest.setup.js": true,
-      "node_modules/": true,
-      "out/": true,
-      "package-lock.json": true,
-      "public/": true,
-      "readme.md": true,
-      "yarn-error.log": true,
-      "yarn.lock": true
+      "**/.babelrc": true,
+      "**/.codeclimate.yml": true,
+      "**/.editorconfig": true,
+      "**/.eslintignore": true,
+      "**/.eslintrc.js": true,
+      "**/.gitattributes": true,
+      "**/.gitignore": true,
+      "**/.lintstagedrc.json": true,
+      "**/.next/": true,
+      "**/.prettierignore": true,
+      "**/.prettierrc": true,
+      "**/.stylelintignore": true,
+      "**/.stylelintrc": true,
+      "**/babel.config.js": true,
+      "**/commitlint.config.js": true,
+      "**/jest.config.js": true,
+      "**/jest.setup.js": true,
+      "**/jsconfig.json": true,
+      "**/next.config.js": true,
+      "**/node_modules/": true,
+      "**/out/": true,
+      "**/package-lock.json": true,
+      "**/public/": true,
+      "**/readme.md": true,
+      "**/yarn-error.log": true,
+      "**/yarn.lock": true
     },
     "search.exclude": {
       "**/.git": true,

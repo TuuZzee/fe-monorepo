@@ -4,7 +4,6 @@
 
 - none
 - global
-- @namespace/admin-portal
 - @namespace/engineering-portal
 - @namespace/website
 - @legacy/[...]
