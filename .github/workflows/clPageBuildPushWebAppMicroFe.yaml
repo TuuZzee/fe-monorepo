@@ -1,4 +1,4 @@
-name: WebApp Micro Frontend Build and push to deploy repository Worflow
+name: Build WebApp Micro Frontend
 
 on:
   workflow_dispatch:
