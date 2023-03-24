@@ -54,25 +54,25 @@ export const handleSize = size => {
 };
 
 export const loaderMain = {
-  [types.primaryDefault]: colors.whiteH68CBF1,
-  [types.primaryDestructive]: colors.redHF07175,
-  [types.primaryCancel]: colors.grayHC5CBCF,
-  [types.secondaryDefault]: colors.blueHBEE9F9,
-  [types.secondaryDestructive]: colors.redHF9C2C4,
-  [types.tertiaryDefault]: colors.blueHB9E4F6,
-  [types.tertiaryDestructive]: colors.redHF4BFC0,
-  [types.toastrDefault]: '#235062',
+  [types.primaryDefault]: colors.blueHA1C6EA,
+  [types.primaryDestructive]: colors.redHC20F0F,
+  [types.primaryCancel]: colors.grayHCECECE,
+  [types.secondaryDefault]: colors.blueHE6EEFC,
+  [types.secondaryDestructive]: colors.redHFCF3F6,
+  [types.tertiaryDefault]: colors.blueHE6EEFC,
+  [types.tertiaryDestructive]: colors.redHFAD3D3,
+  [types.toastrDefault]: colors.whiteHFFFFFF,
 };
 
 export const loaderSec = {
   [types.primaryDefault]: colors.whiteHFFFFFF,
   [types.primaryDestructive]: colors.whiteHFFFFFF,
   [types.primaryCancel]: colors.whiteHFFFFFF,
-  [types.secondaryDefault]: colors.blueH27B4EB,
-  [types.secondaryDestructive]: colors.redHE9343A,
-  [types.tertiaryDefault]: colors.blueH27B4EB,
-  [types.tertiaryDestructive]: colors.redHE9343A,
-  [types.toastrDefault]: colors.blueH27B4EB,
+  [types.secondaryDefault]: colors.blueH4285F4,
+  [types.secondaryDestructive]: colors.redHDB4437,
+  [types.tertiaryDefault]: colors.blueH4285F4,
+  [types.tertiaryDestructive]: colors.redHDB4437,
+  [types.toastrDefault]: colors.blueH4285F4,
 };
 
 const LoaderCircle = styled.div`

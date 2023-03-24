@@ -87,121 +87,122 @@ const handleBgColor = bgType => {
   switch (bgType) {
     case types.primaryDefault:
       return css`
-        background: ${colors.blueH27B4EB};
+        background: ${colors.blueH4285F4};
 
         &:hover {
-          background: ${colors.blueH0BBFF7};
+          background: ${colors.blueH569AF8};
         }
 
         &:active {
-          background: ${colors.blueH0099DA};
+          background: ${colors.blueH3081F1};
         }
 
         &:disabled {
-          background: ${colors.blueH92DAF4};
+          background: ${colors.blueH88B5F5};
         }
       `;
     case types.primaryDestructive:
       return css`
-        background: ${colors.redHE9343A};
+        background: ${colors.redHDB4437};
 
         &:hover {
-          background: ${colors.redHD72A34};
+          background: ${colors.redHD32B2B};
         }
 
         &:active {
-          background: ${colors.redHCA222D};
+          background: ${colors.redHC20F0F};
         }
 
         &:disabled {
-          background: ${colors.redHE9343A};
+          background: ${colors.redHF59797};
         }
       `;
     case types.primaryCancel:
       return css`
-        background: ${colors.grayHACB4BB};
+        background: ${colors.grayH999999};
 
         &:hover {
-          background: ${colors.grayH868D94};
+          background: ${colors.grayH878787};
         }
 
         &:active {
-          background: ${colors.grayH868D94};
+          background: ${colors.grayH6E6C6C};
         }
 
         &:disabled {
-          background: ${colors.grayHACB4BB};
+          background: ${colors.grayHD0D0D1};
         }
       `;
     case types.primaryFullDefault:
       return css`
-        background: ${colors.blueH27B4EB};
+        background: ${colors.blueH4285F4};
         border-radius: 0;
 
         &:hover {
-          background: ${colors.blueH0BBFF7};
+          background: ${colors.blueH569AF8};
         }
 
         &:active {
-          background: ${colors.blueH0099DA};
+          background: ${colors.blueH1F77F3};
         }
 
         &:disabled {
-          background: ${colors.blueH92DAF4};
+          background: ${colors.blueH88B5F5};
         }
       `;
     case types.primaryFullDestructive:
       return css`
-        background: ${colors.redHE9343A};
+        background: ${colors.redHDB4437};
         border-radius: 0;
 
         &:hover {
-          background: ${colors.redHD72A34};
+          background: ${colors.redHD32B2B};
         }
 
         &:active {
-          background: ${colors.redHCA222D};
+          background: ${colors.redHC20F0F};
         }
 
         &:disabled {
-          background: ${colors.redHE9343A};
+          background: ${colors.redHF59797};
         }
       `;
     case types.secondaryDefault:
       return css`
         background: ${colors.whiteHFFFFFF};
-        color: ${colors.blueH27B4EB};
-        border: 1px solid ${colors.blueH27B4EB};
+        color: ${colors.blueH4285F4};
+        border: 1px solid ${colors.blueH4285F4};
 
         &:hover {
-          background: ${colors.blueHF6FCFE};
-          color: ${colors.blueH0BBFF7};
+          background: ${colors.blueHE6EEFC};
+          color: ${colors.blueH4285F4};
         }
 
         &:active {
-          background: ${colors.blueHE5F6FD};
-          color: ${colors.blueH0099DA};
+          background: ${colors.blueHD7E5FC};
+          color: ${colors.blueH1F77F3};
         }
 
         &:disabled {
           background: linear-gradient(180deg, #fff 0%, rgb(255 255 255 / 0%) 100%),
             ${colors.whiteHFFFFFF};
-          color: ${colors.blueH92DAF4};
-          border: 1px solid ${colors.blueH92DAF4};
+          color: ${colors.blueHD7E5FC};
+          border: 1px solid ${colors.blueHD7E5FC};
         }
       `;
     case types.secondaryDestructive:
       return css`
         background: ${colors.whiteHFFFFFF};
-        color: ${colors.redHE9343A};
-        border: 1px solid ${colors.redHE9343A};
+        color: ${colors.redHDB4437};
+        border: 1px solid ${colors.redHDB4437};
 
         &:hover {
-          background: ${colors.redHFEF7F7};
+          background: ${colors.redHFCF3F6};
         }
 
         &:active {
-          background: ${colors.redHFCE7E7};
+          background: ${colors.redHFAD3D3};
+          color: ${colors.redHC20F0F};
         }
 
         &:disabled {
@@ -214,34 +215,37 @@ const handleBgColor = bgType => {
     case types.secondaryFullDefault:
       return css`
         background: ${colors.whiteHFFFFFF};
-        color: ${colors.blueH27B4EB};
+        color: ${colors.blueH4285F4};
         border-radius: 0;
 
         &:hover {
-          background: ${colors.blueHF4FBFE};
+          background: ${colors.blueHE6EEFC};
         }
 
         &:active {
-          background: ${colors.blueHE9F7FD};
+          background: ${colors.blueHD7E5FC};
+          color: ${colors.blueH1F77F3};
         }
 
         &:disabled {
-          background: ${colors.whiteHFFFFFF};
-          color: ${colors.blueH92DAF4};
+          background: linear-gradient(180deg, #fff 0%, rgb(255 255 255 / 0%) 100%),
+            ${colors.whiteHFFFFFF};
+          color: ${colors.blueHD7E5FC};
         }
       `;
     case types.secondaryFullDestructive:
       return css`
         background: ${colors.whiteHFFFFFF};
-        color: ${colors.redHE9343A};
+        color: ${colors.redHDB4437};
         border-radius: 0;
 
         &:hover {
-          background: ${colors.redHFEF7F7};
+          background: ${colors.redHFCF3F6};
         }
 
         &:active {
-          background: ${colors.redHFCE7E7};
+          background: ${colors.redHFAD3D3};
+          color: ${colors.redHC20F0F};
         }
 
         &:disabled {
@@ -251,77 +255,88 @@ const handleBgColor = bgType => {
     case types.tertiaryDefault:
       return css`
         background: transparent;
-        color: ${colors.blueH27B4EB};
+        color: ${colors.blueH4285F4};
 
         &:hover {
-          background: ${colors.blueHF6FCFE};
+          background: ${colors.blueHE6EEFC};
         }
 
         &:active {
-          background: ${colors.blueHE5F6FD};
+          background: ${colors.blueHD7E5FC};
         }
 
         &:disabled {
-          color: ${colors.blueH92DAF4};
+          color: ${colors.blueHE6EEFC};
+
+          &:hover {
+            background: none;
+          }
         }
       `;
     case types.tertiaryDestructive:
       return css`
         background: transparent;
-        color: ${colors.redHE9343A};
+        color: ${colors.redHDB4437};
 
         &:hover {
-          background: ${colors.redHFEF7F7};
+          background: ${colors.redHFCF3F6};
         }
 
         &:active {
-          background: ${colors.redHFCE7E7};
+          background: ${colors.redHFAD3D3};
+          color: ${colors.redHC20F0F};
         }
 
         &:disabled {
-          color: ${colors.redHF09A9D};
+          color: ${colors.redHF59797};
+
+          &:hover {
+            background: none;
+          }
         }
       `;
     case types.tertiaryFullDefault:
       return css`
         background: ${colors.whiteHFFFFFF};
-        color: ${colors.blueH27B4EB};
+        color: ${colors.blueH4285F4};
         border-radius: 0;
 
         &:hover {
-          background: ${colors.blueHF4FBFE};
+          background: ${colors.blueHE6EEFC};
         }
 
         &:active {
-          background: ${colors.blueHE9F7FD};
+          background: ${colors.blueHD7E5FC};
         }
 
         &:disabled {
           background: ${colors.whiteHFFFFFF};
-          color: ${colors.blueH92DAF4};
+          color: ${colors.blueHE6EEFC};
         }
       `;
     case types.tertiaryFullDestructive:
       return css`
         background: ${colors.whiteHFFFFFF};
-        color: ${colors.redHE9343A};
+        color: ${colors.redHDB4437};
         border-radius: 0;
 
         &:hover {
-          background: ${colors.redHFEF7F7};
+          background: ${colors.redHFCF3F6};
         }
 
         &:active {
-          background: ${colors.redHFCE7E7};
+          background: ${colors.redHFAD3D3};
+          color: ${colors.redHC20F0F};
         }
 
         &:disabled {
+          color: ${colors.redHF59797};
           background: ${colors.whiteHFFFFFF};
         }
       `;
     default:
       return css`
-        background: ${props => props.bgColor || colors.blueH27B4EB};
+        background: ${props => props.bgColor || colors.blueH4285F4};
       `;
   }
 };
@@ -339,7 +354,7 @@ export const ButtonWrapper = styled.button`
   border-radius: 4px;
 
   &:hover {
-    background: ${colors.blueH0BBFF7};
+    background: ${colors.blueH4285F4};
   }
 
   ${({ size }) => handleSize(size)}
