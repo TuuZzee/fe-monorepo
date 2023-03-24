@@ -19,7 +19,7 @@ import FormItemListSection from '../src/components/FormItemListSection';
 import TopNavBar from '../src/components/shared/TopNavBar';
 
 const TemplatePage = function ({ todosShared }) {
-  const { currentLocale } = useContext(LocaleContext);
+  const { currentLocale, updateLocale } = useContext(LocaleContext);
 
   const intlMessages = flattenMessages(
     mergeAll([wordingSharedCommon, wordingErrMsgCommon, wordingPage])[currentLocale],
@@ -27,7 +27,7 @@ const TemplatePage = function ({ todosShared }) {
 
   return (
     <LocaleAndToastrWrapper wordingPage={intlMessages}>
-      <TopNavBar />
+      <TopNavBar currentLocale={currentLocale} setCurrentLocale={updateLocale} />
       <br />
       <Template />
       <br />

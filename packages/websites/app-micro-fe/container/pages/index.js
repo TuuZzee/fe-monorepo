@@ -18,7 +18,7 @@ import wordingPage from '../src/locale/common';
 import { addPost, removePost } from '../src/redux/modules/posts';
 
 const LandingPage = function ({ posts, todosShared }) {
-  const { currentLocale } = useContext(LocaleContext);
+  const { currentLocale, updateLocale } = useContext(LocaleContext);
 
   const intlMessages = flattenMessages(
     mergeAll([wordingSharedCommon, wordingErrMsgCommon, wordingPage])[currentLocale],
@@ -26,7 +26,7 @@ const LandingPage = function ({ posts, todosShared }) {
 
   return (
     <LocaleAndToastrWrapper wordingPage={intlMessages}>
-      <TopNavBar />
+      <TopNavBar currentLocale={currentLocale} setCurrentLocale={updateLocale} />
       <br />
       <FormItemListSection
         addItem={addPost}
