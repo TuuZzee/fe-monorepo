@@ -14,7 +14,7 @@ on:
 
 jobs:
   build:
-    uses: TuuZzee/actions/.github/workflows/fe-build-push.yaml@main # ./fe-build-push.yaml - create parent monorepo and move that action whitin to be able to call from here
+    uses: TuuZzee/fe-monorepo/.github/workflows/fe-build-push.yml@main
     secrets:
       API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       USER_EMAIL: ${{ secrets.USER_EMAIL }}
