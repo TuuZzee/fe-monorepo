@@ -6,7 +6,7 @@
 # on:
 #   workflow_call:
 #     secrets:
-#       FE_TEAMBOT_GITHUB_TOKEN:
+#       API_TOKEN_GITHUB:
 #         description: 'CloudBot Github Token'
 #         required: true
 #     inputs:
@@ -83,7 +83,7 @@
 #         if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop' || startsWith(github.ref, 'refs/heads/stg-')
 #         uses: dmnemec/copy_file_to_another_repo_action@main
 #         env:
-#           API_TOKEN_GITHUB: ${{ secrets.FE_TEAMBOT_GITHUB_TOKEN }}
+#           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
 #         with:
 #           source_file: "./${{ inputs.dest-env-path }}/build/deploy"
 #           destination_repo: "org_name/fe-${{ github.ref == 'refs/heads/main' && 'prod' || 'stg' }}-${{ inputs.project }}"
@@ -96,7 +96,7 @@
 #         if: contains('releases/', github.ref)
 #         uses: dmnemec/copy_file_to_another_repo_action@main
 #         env:
-#           API_TOKEN_GITHUB: ${{ secrets.FE_TEAMBOT_GITHUB_TOKEN }}
+#           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
 #         with:
 #           source_file: "./${{ inputs.dest-env-path }}/build/deploy"
 #           destination_repo: "org_name/fe-prod-${{ inputs.project }}"
@@ -110,7 +110,7 @@
 #         if: contains('test-stg/', github.ref)
 #         uses: dmnemec/copy_file_to_another_repo_action@main
 #         env:
-#           API_TOKEN_GITHUB: ${{ secrets.FE_TEAMBOT_GITHUB_TOKEN }}
+#           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
 #         with:
 #           source_file: "./${{ inputs.dest-env-path }}/build/deploy"
 #           destination_repo: "org_name/fe-stg-${{ inputs.project }}"
@@ -124,7 +124,7 @@
 #         if: github.event.created == true
 #         uses: dmnemec/copy_file_to_another_repo_action@main
 #         env:
-#           API_TOKEN_GITHUB: ${{ secrets.FE_TEAMBOT_GITHUB_TOKEN }}
+#           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
 #         with:
 #           source_file: "./${{ inputs.dest-env-path }}/build/deploy"
 #           destination_repo: "org_name/fe-stg-${{ inputs.project }}"
