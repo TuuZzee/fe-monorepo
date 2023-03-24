@@ -1,0 +1,25 @@
+name: Build WebApp Micro Frontend
+
+on:
+  workflow_dispatch:
+    if: contains('["TuuZzee"]', github.actor)
+  push:
+    branches: [ main, develop, stg-web-app-micro-fe, 'releases/web-app-micro-fe/**', 'test-stg/web-app-micro-fe/**' ]
+    paths:
+      - '.github/workflows/clPageBuildPushWebAppMicroFe.yml'
+      - 'packages/websites/app-micro-fe/**'
+      - 'packages/shared/**'
+      - 'packages/storybook/**'
+      - '!packages/**/*.md'
+
+jobs:
+  build:
+    uses: TuuZzee/fe-monorepo/.github/workflows/fe-build-push.yml@main
+    secrets:
+      API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      USER_EMAIL: ${{ secrets.USER_EMAIL }}
+      USER_NAME: ${{ secrets.USER_NAME }}
+    with:
+      project: 'web-app-micro-fe-container'
+      source-env-path: 'packages/websites/app-micro-fe/shared/envs'
+      dest-env-path: 'packages/websites/app-micro-fe/container'

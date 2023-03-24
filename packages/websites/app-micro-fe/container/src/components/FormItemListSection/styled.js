@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const SectionTitle = styled.h3`
+  margin-bottom: 25px;
   font-size: 32px;
   line-height: 42px;
 

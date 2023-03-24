@@ -1,10 +1,13 @@
-# Frontend monoroepo
+# Frontend Monorepo
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-This is a Monorepo for front-end services. Currently all services are Next.js applications and mostly based
-from the [fe-boilerplate-NextJs](https://github.com/TuuZzee/boilerplate-NextJS). It makes use of Lerna and Yarn workspace to organize and manage the namespace and dependencies. 
-And also a close to Micro-frontend approach for each of the NextJS project/service. All should be able to run as standalone locally and some can be deployed on Cloud Service as full applications depending of the need.
+This is a Monorepo for front-end services. Currently all services are Next.js applications and
+mostly based from the [fe-boilerplate-NextJs](https://github.com/TuuZzee/boilerplate-NextJS). It
+makes use of Lerna and Yarn workspace to organize and manage the namespace and dependencies. And
+also a close to Micro-frontend approach for each of the NextJS project/service. All should be able
+to run as standalone locally and some can be deployed on Cloud Service as full applications
+depending of the need.
 
 **Motto:** Both lazy and efficient—it does the least amount of work possible and it tries to never
 redo work that's already been done before.
@@ -26,13 +29,13 @@ redo work that's already been done before.
 
 ## Context
 
-There use to be a time when all projects within a company who might be using different tech stack and versions, this can be due to various reasons (ex: existance of legacy services, ongoing migration etc...) this makes maintenance and development quite troublesome.
+There use to be a time when all projects within a company who might be using different tech stack
+and versions, this can be due to various reasons (ex: existance of legacy services, ongoing
+migration etc...) this makes maintenance and development quite troublesome.
 
-So here comes this monorepo infrastructure for frontend service/project. This
-allow to host a single tech stack and to used across multiple service/project. It also allow to keep trace of other project that might not yet share the same stack in a specific namespace in `/legacy`. More on this later.
-
-For more information about the infrastructure can be found
-[here](https://bitfinder.atlassian.net/l/c/Wu16keVP).
+So here comes this monorepo infrastructure for frontend service/project. This allow to host a single
+tech stack and to used across multiple service/project. It also allow to keep trace of other project
+that might not yet share the same stack in a specific namespace in `/legacy`. More on this later.
 
 ## Requirements
 
@@ -56,9 +59,7 @@ npm install --global lerna
 
 This workspace is build using [Lerna](https://github.com/lerna/lerna) and
 [Yarn workspaces](https://yarnpkg.com/features/workspaces). Lerna has a lot of available commands
-and tools, especially for packages publishing (open source),
-[here](https://bitfinder.atlassian.net/l/c/EvL8Tetn) is the exhaustive list that we will mainly use
-(in private repository mode).
+and tools, especially for packages publishing (open source)
 
 ```sh
 # Clone the repository
@@ -91,7 +92,9 @@ yarn workspace @namespace/storybook dev
 
 ## Dependencies package.json files (excluding legacy folder)
 
-All the namespace are using Javascript, with the exception of the engineering portal template which is currently benchmarking a potential move to Typescript as well as some other tools (Redux Toolkit, Tailwind etc...)
+All the namespace are using Javascript, with the exception of the engineering portal template which
+is currently benchmarking a potential move to Typescript as well as some other tools (Redux Toolkit,
+Tailwind etc...)
 
 The following dependencies are installed **globally** and ready for use in all micro-service within
 the monorepo:
@@ -130,15 +133,17 @@ re-link local packages together.
 
 ## Legacy projects
 
-Possible legacy project can be moved in there, those aren't using lerna and aren't part of the Global dependencies setup. The idea is to move potencial legacy project in there to keep track of them more easily in a central location. This can help for incremental migration or potential service rewrite.
+Possible legacy project can be moved in there, those aren't using lerna and aren't part of the
+Global dependencies setup. The idea is to move potencial legacy project in there to keep track of
+them more easily in a central location. This can help for incremental migration or potential service
+rewrite.
 
 ## Monorepo structure
 
 The default standard in terms of project/service - workspaces structure must be followed. All are
 under `packages` folder, each named as with the `@namespace/service-name` convention.
 
-For workspaces belonging to the same root project we are using a prefix in the name. (ex:
-`web-`).
+For workspaces belonging to the same root project we are using a prefix in the name. (ex: `web-`).
 
 The folder name and @namespace name **MUST** be the same.
 
@@ -171,9 +176,9 @@ Repo file folder structure:
 **NOTE:** All configs for Git/Eslint/Prettier/StyleLint can be overridden inside each workspace if
 needed.
 
-**NOTE:** Each @namespace/web- can be either a **Standalone** or a **Micro frontend** service. Standalone
-services can load one or more Micro frontend service. Only Standalone services can contain a build/
-and public/ folder as well as jsconfig.json file.
+**NOTE:** Each @namespace/web- can be either a **Standalone** or a **Micro frontend** service.
+Standalone services can load one or more Micro frontend service. Only Standalone services can
+contain a build/ and public/ folder as well as jsconfig.json file.
 
 ## Git branches and commits conventions
 
@@ -250,7 +255,8 @@ In order to conduct a production release process is as follow:
 
 Github Actions are used to deploy to proper environments.
 
-The hosting is handle by Cloudflare pages for websites, in order to deploy over the cloud service we are using Github actions. For workers wrangler 
+The hosting is handle by Cloudflare pages for websites, in order to deploy over the cloud service we
+are using Github actions. For workers wrangler
 
 In order to deploy to Cloudflare pages, a project must be associated to a repository (currently
 doesn't support monorepo setups). To handle this flow we are using "child" repository which are only
@@ -319,9 +325,8 @@ yarn test:project projectName
 
 Useful options to add to the commands are:
 
-- `-t testSerial`: Run tests (matching on `it`/`describe`) that contains the testName (ex:
-  STBK.BTTN for storybook buttons feature tests, assuming the test name contain the
-  serialized feature name)
+- `-t testSerial`: Run tests (matching on `it`/`describe`) that contains the testName (ex: STBK.BTTN
+  for storybook buttons feature tests, assuming the test name contain the serialized feature name)
 
 ```sh
 yarn test:project storybook -t STBK.BTTN
@@ -331,7 +336,8 @@ yarn test:project storybook -t STBK.BTTN
 
 If you use the Monorepo Workspace extension the @legacy workspace might disappear when setting
 workspace scope (when doing a 'Monorepo: Select Workspace Folder') This is due to the fact that the
-`@legacy` (`./legacy/**`) are currently isolated to not be linked when doing a `lerna bootstrap` You can reset the VS Code workspace settings by using the template:
+`@legacy` (`./legacy/**`) are currently isolated to not be linked when doing a `lerna bootstrap` You
+can reset the VS Code workspace settings by using the template:
 
 ```sh
 # From the root of the repository
