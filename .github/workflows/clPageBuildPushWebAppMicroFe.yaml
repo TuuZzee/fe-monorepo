@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     if: contains('["TuuZzee"]', github.actor)
   push:
-    branches: [ main, develop, stg-web-template, 'releases/web-template/**', 'test-stg/web-template/**' ]
+    branches: [ main, develop, stg-web-app-micro-fe, 'releases/web-app-micro-fe/**', 'test-stg/web-app-micro-fe/**' ]
     paths:
       - '.github/workflows/clPageBuildPushWebAppMicroFe.yml'
       - 'packages/websites/app-micro-fe/**'
@@ -17,6 +17,8 @@ jobs:
     uses: TuuZzee/actions/.github/workflows/fe-build-push.yaml@main # ./fe-build-push.yaml - create parent monorepo and move that action whitin to be able to call from here
     secrets:
       API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      USER_EMAIL: ${{ secrets.USER_EMAIL }}
+      USER_NAME: ${{ secrets.USER_NAME }}
     with:
       project: 'web-app-micro-fe-container'
       source-env-path: 'packages/websites/app-micro-fe/shared/envs'
