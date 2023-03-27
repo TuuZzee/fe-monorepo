@@ -32,20 +32,20 @@ yarn workspace @namespace/web-app-micro-fe-container build
 ### Envs / Hosting
 
 This repository is using Github Actions to deploy to proper environements. Staging deployment is
-trigger on merge in `develop` and on `stg-web-app-micro-fe` branch. For production release, just
-merge to `main` branch.
+trigger on merge in `develop` and on `stg-web-app-micro-fe-container` branch. For production
+release, just merge to `main` branch.
 
 Production:
 
-- [Cloudflare page project](ToDo)
-- [Child repository](https://github.com/TuuZzee/fe-prod-web-app-micro-fe)
-- ToDo
+- [Cloudflare page project](https://dash.cloudflare.com/df1f6bd1816b52c66006197deda8d8fb/pages/view/fe-prod-web-app-micro-fe-container)
+- [Child repository](https://github.com/TuuZzee/fe-prod-web-app-micro-fe-container)
+- [Demo domain](fe-prod-web-app-micro-fe-container.pages.dev)
 
 Staging:
 
-- [Cloudflare page project](ToDo)
-- [Child repository](https://github.com/TuuZzee/fe-stg-web-app-micro-fe)
-- ToDo
+- [Cloudflare page project](https://dash.cloudflare.com/df1f6bd1816b52c66006197deda8d8fb/pages/view/fe-stg-web-app-micro-fe-container)
+- [Child repository](https://github.com/TuuZzee/fe-stg-web-app-micro-fe-container)
+- [Demo domain](fe-stg-web-app-micro-fe.pages.dev)
 
 ```bash
 # Example with awesome-feature-branch
