@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
+    "buildAndExport": "next build && next export -o build/deploy/out",
     "dev": "cp build/local.env .env.local && NODE_OPTIONS='--inspect' next dev -p 2000",
     "export": "next export",
     "jsLint": "eslint --fix '**/*.js'",
