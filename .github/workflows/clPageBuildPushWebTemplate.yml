@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
     if: contains('["TuuZzee"]', github.actor)
   push:
-    branches: [ main, develop, stg-web-app-micro-fe-container, 'releases/web-app-micro-fe-container/**', 'test-stg/web-app-micro-fe-container/**' ]
+    branches: [ develop, stg-web-template, 'test-stg/web-template/**' ]
     paths:
-      - '.github/workflows/clPageBuildPushWebAppMicroFe.yml'
-      - 'packages/websites/app-micro-fe/**'
+      - '.github/workflows/clPageBuildPushWebTemplate.yml'
+      - 'packages/websites/template/**'
       - 'packages/shared/**'
       - 'packages/storybook/**'
       - '!packages/**/*.md'
@@ -20,6 +20,6 @@ jobs:
       USER_EMAIL: ${{ secrets.USER_EMAIL }}
       USER_NAME: ${{ secrets.USER_NAME }}
     with:
-      project: 'web-app-micro-fe-container'
-      source-env-path: 'packages/websites/app-micro-fe/shared/envs'
-      dest-env-path: 'packages/websites/app-micro-fe/container'
+      project: 'web-template'
+      source-env-path: 'packages/websites/template/build'
+      dest-env-path: 'packages/websites/template'
