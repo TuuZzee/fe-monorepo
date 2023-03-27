@@ -20,7 +20,6 @@ export const GlobalStyles = createGlobalStyle`
   #nprogress .spinner-icon {
     display: none;
   }
-
 `;
 
 export const Unused = '';
