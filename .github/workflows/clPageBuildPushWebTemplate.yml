@@ -1,4 +1,4 @@
-name: Build WebApp Micro Frontend
+name: Build and push web-template service
 
 on:
   workflow_dispatch:

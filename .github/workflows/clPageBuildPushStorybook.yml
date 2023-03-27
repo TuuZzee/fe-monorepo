@@ -1,4 +1,4 @@
-name: Build WebApp Micro Frontend
+name: Build and push storybook service
 
 on:
   workflow_dispatch:

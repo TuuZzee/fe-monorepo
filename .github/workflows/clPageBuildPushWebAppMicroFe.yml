@@ -1,4 +1,4 @@
-name: Build WebApp Micro Frontend
+name: Build and push web-app-micro-fe-container service
 
 on:
   workflow_dispatch:
