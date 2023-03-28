@@ -42,7 +42,6 @@ export const InputWrapperDiv = styled(InputWrapper)`
   flex-direction: row;
   align-items: center;
   padding: 14px 16px;
-
   width: 100%;
 
   &:hover {

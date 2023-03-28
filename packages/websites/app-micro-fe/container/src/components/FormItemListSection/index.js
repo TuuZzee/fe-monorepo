@@ -6,9 +6,9 @@ import { useIntl } from 'react-intl';
 import { useDispatch } from 'react-redux';
 import { Divider, FlexboxGrid, Form, List } from 'rsuite';
 
-import { Input, Button, PillSmallButton } from '@namespace/storybook/src/components/atoms';
+import { Button, PillSmallButton } from '@namespace/storybook/src/components/atoms';
 
-import { SectionTitle, SectionWrapper, ListItemContent } from './styled';
+import { SectionTitle, SectionWrapper, ListItemContent, FormInput } from './styled';
 
 const FormItemListSection = function ({ addItem, items, itemType, removeItem, titleKey }) {
   const intl = useIntl();
@@ -31,7 +31,7 @@ const FormItemListSection = function ({ addItem, items, itemType, removeItem, ti
           <FlexboxGrid.Item>
             <Form onSubmit={handleAddItem}>
               <Form.Group>
-                <Input
+                <FormInput
                   helperText="Required"
                   label={intl.messages['input.labelAdd']}
                   name="addItemInput"

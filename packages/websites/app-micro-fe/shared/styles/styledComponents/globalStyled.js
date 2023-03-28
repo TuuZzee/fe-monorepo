@@ -2,15 +2,14 @@ import { createGlobalStyle } from 'styled-components';
 
 import { sharedGlobalStyles } from '@namespace/web-shared/styles/sharedGlobalStyles';
 
-import { colors } from '@namespace/web-shared/styles/theme';
-
 export const GlobalStyles = createGlobalStyle`
   ${sharedGlobalStyles}
 
   header { z-index: 1; }
 
   body {
-    background-color: ${colors.grayHF8F9FA};
+    background-color: ${({ theme }) => theme.colors.background.body};
+    color: ${({ theme }) => theme.colors.text.title};
   }
 
   /*

@@ -13,7 +13,8 @@ export const colors = {
   whiteHFFFFFF: '#FFFFFF',
 
   blackH000000: '#000000',
-
+  blackH303234: '#303234',
+  grayHE1DED6: '#E1DED6',
   redHE01E3C: '#E01E3C',
 
   greenH04E77F: '#04E77F',

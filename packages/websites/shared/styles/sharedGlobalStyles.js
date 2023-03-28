@@ -79,6 +79,14 @@ export const sharedGlobalStyles = css`
   #nprogress .peg {
     box-shadow: ${`0 0 10px ${colors.redHE01E3C}, 0 0 5px ${colors.redHE01E3C}`};
   }
+
+  .rs-toggle.rs-toggle-lg.rs-toggle-checked .rs-toggle-presentation {
+    background-color: ${colors.grayHE1DED6} !important;
+  }
+
+  .rs-toggle.rs-toggle-lg .rs-toggle-presentation {
+    background-color: ${colors.blackH303234} !important;
+  }
 `;
 
 export const tmp = 'tmp';

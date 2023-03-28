@@ -31,12 +31,15 @@
     "lodash": "^4.17.21",
     "luxon": "^3.3.0",
     "prop-types": "^15.8.1",
+    "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intl": "^6.2.10",
-    "react": "^18.2.0",
     "rsuite": "^5.28.2",
     "storybook-react-intl": "^1.1.1",
     "styled-components": "^5.3.8",
     "webpack": "*"
+  },
+  "devDependencies": {
+    "storybook-dark-mode": "^2.1.1"
   }
 }
