@@ -6,9 +6,9 @@ import { ColumnContainer } from '../../styledComponents';
 
 export const CardWrapper = styled.article`
   box-shadow: 0 4px 16px rgb(0 0 0 / 8%);
-  border: 1px solid ${colors.grayHE9ECEE};
+  border: 1px solid ${colors.grayHCECECE};
   border-radius: 16px;
-  background-color: ${colors.whiteHffffff};
+  background-color: ${colors.whiteHFFFFFF};
   padding: 32px;
 `;
 
