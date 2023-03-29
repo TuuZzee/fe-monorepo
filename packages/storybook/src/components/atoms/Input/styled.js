@@ -36,7 +36,7 @@ export const InputFormWrapper = styled.div`
 `;
 
 export const InputWrapperDiv = styled(InputWrapper)`
-  border: 1px solid ${colors.grayHCDD3D8};
+  border: 1px solid ${colors.grayHCECECE};
   background: ${colors.whiteHFFFFFF};
   display: flex;
   flex-direction: row;
@@ -45,24 +45,24 @@ export const InputWrapperDiv = styled(InputWrapper)`
   width: 100%;
 
   &:hover {
-    border: 1px solid ${colors.blueH27B4EB};
+    border: 1px solid ${colors.blueH4285F4};
   }
 
   &:focus-within {
-    border: 2px solid ${colors.blueH27B4EB};
+    border: 2px solid ${colors.blueH4285F4};
   }
 
   ${props =>
     props.error &&
     css`
-      border: 2px solid ${colors.redHE9343A};
+      border: 2px solid ${colors.redHDB4437};
     `};
 
   ${props =>
     props.disabled && {
       pointerEvents: 'none',
-      color: `${colors.grayHACB4BB} !important`,
-      border: `1px solid ${colors.grayHCDD3D8} !important`,
+      color: `${colors.grayH999999} !important`,
+      border: `1px solid ${colors.grayHCECECE} !important`,
       background: `${colors.grayHF1F3F4} !important`,
     }}
 `;
@@ -84,7 +84,7 @@ export const InputTag = styled.input`
   left: 16px;
 
   &::placeholder {
-    color: ${colors.grayHACB4BB};
+    color: ${colors.grayH999999};
   }
 
   &::-webkit-inner-spin-button {
@@ -98,7 +98,7 @@ export const InputTag = styled.input`
   }
 
   &:disabled {
-    color: ${colors.grayHACB4BB};
+    color: ${colors.grayH999999};
   }
 
   ::-webkit-credentials-auto-fill-button {
@@ -123,7 +123,7 @@ export const IconLeft = styled.div`
 export const TextWrapper = styled(TextP2)`
   min-height: 20px;
   margin-top: 12px;
-  color: ${props => (props.error ? colors.redHE9343A : colors.grayHACB4BB)};
+  color: ${props => (props.error ? colors.redHDB4437 : colors.grayH999999)};
 `;
 
 export const InputGroup = styled(RsuiteInputGroup)`
@@ -131,6 +131,10 @@ export const InputGroup = styled(RsuiteInputGroup)`
   outline: none;
   box-shadow: none !important;
   width: 92% !important;
+
+  :focus-within {
+    outline: none !important;
+  }
 `;
 
 export const AutoComplete = styled(RsuiteAutocomplite)`
@@ -146,8 +150,8 @@ export const AutoComplete = styled(RsuiteAutocomplite)`
     line-height: 24px;
     color: ${colors.grayH343A3E};
 
-    :focus {
-      box-shadow: none;
+    :focus-within {
+      outline: none !important;
     }
   }
 `;

@@ -61,6 +61,17 @@ title: `${projects.web-template}/${componentTypes.atom}/Buttons`,
 Learn more about [Atomic design](https://bradfrost.com/blog/post/atomic-web-design/) (atomes,
 molecules, organisms etc.)
 
+### Hosting
+
+This repository is using Github Actions to deploy to proper environements. Deployment is trigger on
+merge in `develop` branch.
+
+Production:
+
+- [Cloudflare page project](https://dash.cloudflare.com/df1f6bd1816b52c66006197deda8d8fb/pages/view/fe-storybook-hosting)
+- [Child repository](https://github.com/TuuZzee/fe-storybook-hosting)
+- [Demo domain](fe-storybook-hosting-9l0.pages.dev)
+
 ## Learn More
 
 To learn more about Storybook & Next.js, take a look at the following resources:

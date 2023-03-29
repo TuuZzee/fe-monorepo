@@ -1,10 +1,10 @@
-name: Build WebApp Micro Frontend
+name: Build and push web-app-micro-fe-container service
 
 on:
   workflow_dispatch:
     if: contains('["TuuZzee"]', github.actor)
   push:
-    branches: [ main, develop, stg-web-app-micro-fe, 'releases/web-app-micro-fe/**', 'test-stg/web-app-micro-fe/**' ]
+    branches: [ main, develop, stg-web-app-micro-fe-container, 'releases/web-app-micro-fe-container/**', 'test-stg/web-app-micro-fe-container/**' ]
     paths:
       - '.github/workflows/clPageBuildPushWebAppMicroFe.yml'
       - 'packages/websites/app-micro-fe/**'

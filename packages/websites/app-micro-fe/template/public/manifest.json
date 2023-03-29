@@ -1,0 +1,7 @@
+{
+  "name": "Web Template Micro-frontend service on Next.js",
+  "short_name": "web-template",
+  "icons": [],
+  "start_url": "/",
+  "display": "standalone"
+}
