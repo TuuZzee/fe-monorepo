@@ -3,7 +3,7 @@ import { colors } from '@namespace/web-shared/styles/theme';
 export default {
   colors: {
     background: {
-      body: 'red',
+      body: `${colors.blackH303234} !important`,
     },
     border: {},
     text: {
