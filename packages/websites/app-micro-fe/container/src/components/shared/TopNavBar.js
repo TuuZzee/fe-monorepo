@@ -5,26 +5,18 @@ import PropTypes from 'prop-types';
 
 import { Navbar, Nav, Dropdown, Toggle } from 'rsuite';
 
+import { dark, light } from '@namespace/web-shared/contexts/UiUxContext';
+import { en, ko } from '@namespace/web-shared/utils/intl-i18n';
+
 import urls from '../../utils/urls';
 
 const { home, template } = urls.inner;
-const en = 'en';
-const ko = 'ko';
-const dark = 'dark';
-const light = 'light';
 
 export const localeStorageId = 'locale';
 
 const TopNavBar = function ({ currentLocale, setCurrentLocale, currentUiTheme, updateUiTheme }) {
   const router = useRouter();
 
-  const handleThemeChange = () => {
-    if (currentUiTheme === light) {
-      updateUiTheme(dark);
-    } else {
-      updateUiTheme(light);
-    }
-  };
   return (
     <Navbar>
       <Nav>
@@ -36,7 +28,7 @@ const TopNavBar = function ({ currentLocale, setCurrentLocale, currentUiTheme, u
           <div style={{ marginTop: '14px' }}>
             <Toggle
               checkedChildren={currentUiTheme}
-              onChange={handleThemeChange}
+              onChange={() => updateUiTheme(currentUiTheme === light ? dark : light)}
               size="lg"
               unCheckedChildren={currentUiTheme}
             />

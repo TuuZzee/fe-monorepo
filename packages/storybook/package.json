@@ -38,8 +38,5 @@
     "storybook-react-intl": "^1.1.1",
     "styled-components": "^5.3.8",
     "webpack": "*"
-  },
-  "devDependencies": {
-    "storybook-dark-mode": "^2.1.1"
   }
 }

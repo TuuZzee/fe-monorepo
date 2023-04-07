@@ -5,11 +5,12 @@ import NProgress from 'nprogress';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
 
+import darkTheme from '@namespace/web-app-micro-fe-shared/styles/darkTheme';
+import lightTheme from '@namespace/web-app-micro-fe-shared/styles/lightTheme';
 import SharedApp from '@namespace/web-shared/nextJs/SharedApp';
 
 import service from '@/service';
-import darkTheme from '@/styles/darkTheme';
-import lightTheme from '@/styles/lightTheme';
+
 import { GlobalStyles } from '@/styles/styledComponents/globalStyled';
 
 import wrapper from '../src/redux/store';

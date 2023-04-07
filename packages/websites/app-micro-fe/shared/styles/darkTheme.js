@@ -7,8 +7,8 @@ export default {
     },
     border: {},
     text: {
-      title: `${colors.whiteHFFFFFF} !important`,
-      inputText: `${colors.blackH303234} !important`,
+      title: colors.whiteHFFFFFF,
+      inputText: colors.blackH303234,
     },
   },
   images: {},
