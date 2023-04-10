@@ -13,15 +13,13 @@ import wordingPage from '@namespace/web-app-micro-fe-template/src/locale/templat
 
 import LocaleAndToastrWrapper from '@namespace/web-shared/components/LocaleAndToastrWrapper';
 import { LocaleContext } from '@namespace/web-shared/contexts/LocaleContext';
-import { UiUxContext } from '@namespace/web-shared/contexts/UiUxContext';
 import { flattenMessages } from '@namespace/web-shared/utils/intl-i18n';
 
 import FormItemListSection from '../src/components/FormItemListSection';
 import TopNavBar from '../src/components/shared/TopNavBar';
 
 const TemplatePage = function ({ todosShared }) {
-  const { currentLocale, updateLocale } = useContext(LocaleContext);
-  const { uiTheme, updateUiTheme } = useContext(UiUxContext);
+  const { currentLocale } = useContext(LocaleContext);
 
   const intlMessages = flattenMessages(
     mergeAll([wordingSharedCommon, wordingErrMsgCommon, wordingPage])[currentLocale],
@@ -29,12 +27,7 @@ const TemplatePage = function ({ todosShared }) {
 
   return (
     <LocaleAndToastrWrapper wordingPage={intlMessages}>
-      <TopNavBar
-        currentLocale={currentLocale}
-        currentUiTheme={uiTheme}
-        setCurrentLocale={updateLocale}
-        updateUiTheme={updateUiTheme}
-      />
+      <TopNavBar />
       <br />
       <Template />
       <br />
