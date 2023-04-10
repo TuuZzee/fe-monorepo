@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 
-import ErrorBoundary from '../components/ErrorBoundary';
 import EnvironmentBadge from '../components/EnvironmentBadge';
+import ErrorBoundary from '../components/ErrorBoundary';
 import MetasViewPorts from '../components/MetasViewPorts';
 import ThemeHandler from '../components/ThemeHandler';
 import LocaleContextProvider from '../contexts/LocaleContext';

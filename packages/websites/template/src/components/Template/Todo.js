@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Divider, FlexboxGrid, Form, List } from 'rsuite';
 
-import { Input, Button } from '@namespace/storybook/src/components/atoms';
+import { Button, Input } from '@namespace/storybook/src/components/atoms';
 
 import { addTodo, removeTodo } from '../../redux/modules/todosTemplate';
 
@@ -30,7 +30,7 @@ const Todo = function ({ todosTemplate }) {
       <FlexboxGrid justify="center">
         <FlexboxGrid.Item colSpan={6}>
           <Form onSubmit={handleAddTodo}>
-            <Form.Group>
+            <Form.Group style={{ width: '300px' }}>
               <Input
                 helperText="Required"
                 label="Add ToDo:"

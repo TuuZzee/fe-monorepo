@@ -3,11 +3,12 @@ import { colors } from '@namespace/web-shared/styles/theme';
 export default {
   colors: {
     background: {
-      body: colors.whiteHfff,
+      body: `${colors.whiteHFFFFFF} !important`,
     },
     border: {},
     text: {
-      title: colors.blackH222,
+      title: `${colors.blackH000000} !important`,
+      inputText: `${colors.blackH303234} !important`,
     },
   },
   images: {},

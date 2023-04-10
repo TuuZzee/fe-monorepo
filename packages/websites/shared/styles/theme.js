@@ -23,7 +23,8 @@ export const colors = {
   blueHA1C6EA: '#A1C6EA', // loader
 
   blackH000000: '#000000',
-
+  blackH303234: '#303234',
+  grayHE1DED6: '#E1DED6',
   redHE01E3C: '#E01E3C',
   redHDB4437: '#DB4437', // original
   redHD32B2B: '#D32B2B', // hover

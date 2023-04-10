@@ -3,13 +3,13 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useIntl } from 'react-intl';
 import { connect, useDispatch } from 'react-redux';
-import { Divider, FlexboxGrid, Form, List } from 'rsuite';
+import { Divider, FlexboxGrid, Form } from 'rsuite';
 
-import { Input, LargeButton } from '@namespace/storybook/src/components/atoms';
+import { LargeButton } from '@namespace/storybook/src/components/atoms';
 
 import { addTodo, removeTodo } from '../../redux/modules/todosTemplate';
 
-import { TemplateTitle, TemplateWrapper } from './styled';
+import { FormInput, List, TemplateTitle, TemplateWrapper } from './styled';
 
 const Template = function ({ todos }) {
   const intl = useIntl();
@@ -32,7 +32,7 @@ const Template = function ({ todos }) {
           <FlexboxGrid.Item colSpan={6}>
             <Form onSubmit={handleAddTodo}>
               <Form.Group>
-                <Input
+                <FormInput
                   helperText="Required"
                   label="Add ToDo:"
                   name="add-todo"
