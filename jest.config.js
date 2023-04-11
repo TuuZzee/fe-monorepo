@@ -1,7 +1,8 @@
 const storybookConfig = require('./packages/storybook/jest.config');
+const webTemplate = require('./packages/websites/template/jest.config');
 
 module.exports = {
-  projects: [storybookConfig],
+  projects: [storybookConfig, webTemplate],
   moduleDirectories: ['node_modules'],
   transform: {
     '\\.[jt]sx?$': 'babel-jest',
