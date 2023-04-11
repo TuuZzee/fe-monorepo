@@ -1,8 +1,19 @@
 const storybookConfig = require('./packages/storybook/jest.config');
+
+const webAppMicroFeContainer = require('./packages/websites/app-micro-fe/container/jest.config');
+const webAppMicroFeShared = require('./packages/websites/app-micro-fe/shared/jest.config');
+const webAppMicroFeTemplate = require('./packages/websites/app-micro-fe/template/jest.config');
+
 const webTemplate = require('./packages/websites/template/jest.config');
 
 module.exports = {
-  projects: [storybookConfig, webTemplate],
+  projects: [
+    storybookConfig,
+    webAppMicroFeContainer,
+    webAppMicroFeShared,
+    webAppMicroFeTemplate,
+    webTemplate,
+  ],
   moduleDirectories: ['node_modules'],
   transform: {
     '\\.[jt]sx?$': 'babel-jest',
