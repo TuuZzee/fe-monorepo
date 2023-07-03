@@ -1,7 +1,7 @@
 import serviceConfig from '../../service.config';
 
-export const ADD_TODO = `${serviceConfig.serviceName}/todoShared/ADD_TODO`;
-export const REMOVE_TODO = `${serviceConfig.serviceName}/todoShared/REMOVE_TODO`;
+export const ADD_TODO = `${serviceConfig.serviceName}/todosShared/ADD_TODO`;
+export const REMOVE_TODO = `${serviceConfig.serviceName}/todosShared/REMOVE_TODO`;
 
 export function addTodo(text) {
   return { type: ADD_TODO, text };

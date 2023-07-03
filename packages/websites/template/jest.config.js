@@ -1,11 +1,11 @@
 const { initDotEnv, getJestBaseConfig } = require('@namespace/web-shared/jest/baseConfig');
 
-const packagePath = 'websites/app-micro-fe/template';
+const packagePath = 'websites/template';
 
 initDotEnv(packagePath);
 const baseConfig = getJestBaseConfig(packagePath);
 
 module.exports = {
   ...baseConfig,
-  displayName: '@namespace/web-app-micro-fe-template',
+  displayName: '@namespace/web-template',
 };

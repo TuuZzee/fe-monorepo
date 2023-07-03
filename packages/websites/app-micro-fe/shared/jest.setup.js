@@ -1,10 +1,8 @@
-import '@testing-library/jest-dom';
 import failOnConsole from 'jest-fail-on-console';
 
 failOnConsole();
 
-global.console = {
-  ...console,
-  error: jest.fn(),
-  debug: jest.fn(),
-};
+const debug = jest.fn();
+const error = jest.fn();
+
+global.console = { ...console, error, debug };
