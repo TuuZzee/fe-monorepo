@@ -18,10 +18,8 @@
   },
   "peerDependencies": {
     "@next/eslint-plugin-next": "13.2.4",
-    "@testing-library/jest-dom": "^5.16.5",
     "immer": "^9.0.19",
     "jest-fail-on-console": "^3.0.2",
-    "jest-styled-components": "^7.1.1",
     "localforage": "^1.10.0",
     "lodash": "^4.17.21",
     "next-images": "^1.8.4",
