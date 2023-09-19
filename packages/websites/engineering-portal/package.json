@@ -22,9 +22,9 @@
     "@stoplight/elements": "^7.12.3",
     "@tailwindcss/forms": "^0.5.6",
     "@tailwindcss/line-clamp": "^0.4.4",
-    "@types/node": "18.15.6",
-    "@types/react": "18.0.28",
-    "@types/react-dom": "18.0.11",
+    "@types/node": "20.6.2",
+    "@types/react": "18.2.22",
+    "@types/react-dom": "18.2.7",
     "autoprefixer": "^10.4.15",
     "axios": "^1.5.0",
     "axios-retry": "^3.7.0",
@@ -51,7 +51,7 @@
     "tailwind-merge": "^1.14.0",
     "tailwxwxindcss-animate": "^1.0.5",
     "tailwindcss": "^3.3.3",
-    "typescript": "^5.0.2",
+    "typescript": "^5.2.2",
     "yup": "^1.2.0"
   }
 }
