@@ -7,7 +7,7 @@
   },
   "peerDependencies": {
     "dotenv": "^16.0.3",
-    "eventemitter3": "^5.0.0",
+    "eventemitter3": "^5.0.1",
     "html-react-parser": "^3.0.14",
     "localforage": "^1.10.0",
     "lodash": "^4.17.21",
@@ -27,7 +27,7 @@
     "rsuite": "^5.28.2",
     "sanitize-html": "^2.10.0",
     "styled-components": "^5.3.8",
-    "tzdata": "^1.0.36",
+    "tzdata": "^1.0.38",
     "validator": "^13.9.0"
   }
 }
