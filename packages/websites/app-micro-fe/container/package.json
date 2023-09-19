@@ -31,12 +31,12 @@
     "react-intl": "^6.2.10",
     "react-query": "^3.39.3",
     "react-redux-toastr": "^7.6.11",
-    "react-redux": "^8.0.4",
+    "react-redux": "^8.1.2",
     "react": "^18.2.0",
     "redux": "^4.2.1",
     "regenerator-runtime": "^0.13.10",
     "rsuite": "^5.28.2",
-    "sass": "^1.59.2",
+    "sass": "^1.67.0",
     "styled-components": "^5.3.8"
   }
 }
