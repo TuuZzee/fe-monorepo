@@ -8,13 +8,17 @@ class TapReporter {
 
   onRunComplete(_contexts, results) {
     const { testResults: testSetResults, numTotalTests } = results;
-    let idx = 1;
     const tap = [`1..${numTotalTests}`];
+
+    let idx = 1;
+
     testSetResults.forEach(testSetResult => {
       const { testResults } = testSetResult;
+
       testResults.forEach(test => {
         const ok = test.status === 'passed' || test.status === 'pending' ? 'ok' : 'not ok';
         const title = `${test.ancestorTitles.join(' ')} > ${test.title}`;
+
         tap.push(
           `${ok} ${idx} - ${title} (${test.duration})${test.status === 'pending' ? ' # SKIP' : ''}`,
         );
@@ -23,10 +27,12 @@ class TapReporter {
     });
 
     const reportString = tap.join('\n');
+
     if (this.outputFile) {
       fs.mkdirSync(path.dirname(this.outputFile), { recursive: true });
-      fs.writeFileSync(this.outputFile, reportString + '\n');
+      fs.writeFileSync(this.outputFile, `${reportString}\n`);
     } else {
+      // eslint-disable-next-line no-console
       console.log(reportString);
     }
   }

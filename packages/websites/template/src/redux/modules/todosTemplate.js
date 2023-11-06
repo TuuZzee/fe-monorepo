@@ -2,17 +2,11 @@ export const ADD_TODO = 'template/todo/ADD_TODO';
 export const REMOVE_TODO = 'template/todo/REMOVE_TODO';
 
 export function addTodo(text) {
-  return {
-    type: ADD_TODO,
-    text,
-  };
+  return { type: ADD_TODO, text };
 }
 
 export function removeTodo(todo) {
-  return {
-    type: REMOVE_TODO,
-    todo,
-  };
+  return { type: REMOVE_TODO, todo };
 }
 
 const todosTemplateReducer = (state = [], action = {}) => {
