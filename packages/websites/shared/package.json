@@ -24,7 +24,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.1",
     "redux": "^4.2.1",
-    "rsuite": "^5.28.2",
+    "rsuite": "^5.43.0",
     "sanitize-html": "^2.11.0",
     "styled-components": "^6.1.0",
     "tzdata": "^1.0.38",

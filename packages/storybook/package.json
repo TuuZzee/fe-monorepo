@@ -34,7 +34,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intl": "^6.5.2",
-    "rsuite": "^5.28.2",
+    "rsuite": "^5.43.0",
     "storybook-react-intl": "^1.1.1",
     "styled-components": "^6.1.0",
     "webpack": "*"
