@@ -47,7 +47,7 @@
     "redux-logger": "^3.0.6",
     "rsuite": "^5.28.2",
     "sass": "^1.67.0",
-    "styled-components": "^5.3.8",
+    "styled-components": "^6.1.0",
     "tailwind-merge": "^1.14.0",
     "tailwxwxindcss-animate": "^1.0.5",
     "tailwindcss": "^3.3.3",

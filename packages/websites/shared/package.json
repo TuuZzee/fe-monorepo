@@ -26,7 +26,7 @@
     "redux": "^4.2.1",
     "rsuite": "^5.28.2",
     "sanitize-html": "^2.10.0",
-    "styled-components": "^5.3.8",
+    "styled-components": "^6.1.0",
     "tzdata": "^1.0.38",
     "validator": "^13.11.0"
   }

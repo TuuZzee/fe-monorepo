@@ -336,12 +336,13 @@ const handleBgColor = bgType => {
       `;
     default:
       return css`
-        background: ${props => props.bgColor || colors.blueH4285F4};
+        background: ${props => props.$bgColor || colors.blueH4285F4};
       `;
   }
 };
 
 export const ButtonWrapper = styled.button`
+  padding: 0;
   font-weight: 500;
   cursor: pointer;
   display: flex;
@@ -358,5 +359,5 @@ export const ButtonWrapper = styled.button`
   }
 
   ${({ size }) => handleSize(size)}
-  ${({ bgType }) => handleBgColor(bgType)}
+  ${({ $bgType }) => handleBgColor($bgType)}
 `;

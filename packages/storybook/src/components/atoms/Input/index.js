@@ -59,20 +59,20 @@ const Input = function ({
   };
 
   return (
-    <InputFormWrapper full={full} onClick={handelClickForFocus} {...props}>
+    <InputFormWrapper $full={full} onClick={handelClickForFocus} {...props}>
       {label ? <LabelWrapper htmlFor={name}>{label}</LabelWrapper> : ''}
-      <InputWrapperDiv disabled={isDisabled} error={error}>
+      <InputWrapperDiv $hasError={error} disabled={isDisabled}>
         {iconLeft && <IconLeft disabled={isDisabled}>{iconLeft}</IconLeft>}
         {isInput && (
           <InputTag
             {...props}
+            $iconLeft={!!iconLeft}
+            $isShown={isShown}
             aria-disabled={isDisabled}
             aria-label={`${name}-input`}
             className=""
             disabled={isDisabled}
-            iconLeft={!!iconLeft}
             id={`${name}-input`}
-            isShown={isShown}
             name={name}
             onBlur={e => onBlur && onBlur(e.target.value)}
             onChange={handleOnChange}
@@ -82,7 +82,7 @@ const Input = function ({
             role="textbox"
             type={isShown ? types.text : type}
             value={value}
-            iconRight={
+            $iconRight={
               type === types.password ||
               (type !== types.password && showEmptyInputButton && !isReadOnly && !isDisabled)
             }
@@ -111,7 +111,7 @@ const Input = function ({
         )}
       </InputWrapperDiv>
       {errorMessage && (
-        <TextWrapper aria-label="input-error-message" error={error}>
+        <TextWrapper $hasError={error} aria-label="input-error-message">
           {errorMessage}
         </TextWrapper>
       )}

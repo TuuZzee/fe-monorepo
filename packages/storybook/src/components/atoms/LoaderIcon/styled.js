@@ -4,7 +4,6 @@ import { colors } from '@namespace/web-shared/styles/theme';
 
 import { ColumnContainer } from '../../styledComponents';
 import { types } from '../Button/props';
-
 import { TextP2 } from '../Typography';
 
 import { sizes } from './props';
@@ -80,8 +79,8 @@ const LoaderCircle = styled.div`
   width: 24px;
   height: 24px;
   position: relative;
-  border: ${props => `3px solid ${loaderMain[props.bgType]}`};
-  border-left: ${props => `3px solid ${loaderSec[props.bgType]}`};
+  border: ${props => `3px solid ${loaderMain[props.$bgType]}`};
+  border-left: ${props => `3px solid ${loaderSec[props.$bgType]}`};
   animation: ${loader} 1.1s infinite linear;
   z-index: 999;
   ${({ size }) => handleSize(size)}
