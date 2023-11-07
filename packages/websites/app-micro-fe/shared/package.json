@@ -17,7 +17,7 @@
     "axios-retry": "^3.8.1",
     "axios": "^1.6.0",
     "framer-motion": "^10.16.4",
-    "immer": "^9.0.19",
+    "immer": "^10.0.3",
     "jest-fail-on-console": "^3.0.2",
     "localforage": "^1.10.0",
     "lodash": "^4.17.21",
