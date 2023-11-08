@@ -1,2 +1,6 @@
+.github/
+.vscode/
+.husky/
+**/build/deploy/out/
 legacy/
 node_modules/
