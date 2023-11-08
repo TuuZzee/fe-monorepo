@@ -144,7 +144,7 @@
     "jest-util": "^29.7.0",
     "jsdom": "^22.1.0",
     "lerna": "^7.4.2",
-    "lint-staged": "14.0.1",
+    "lint-staged": "15.0.2",
     "postcss": "^8.4.31",
     "postcss-scss": "^4.0.9",
     "postcss-styled": "^0.34.0",
