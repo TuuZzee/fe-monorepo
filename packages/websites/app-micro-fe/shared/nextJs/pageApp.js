@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Roboto } from '@next/font/google';
+import { Roboto } from 'next/font/google';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
 

@@ -15,14 +15,14 @@
     "@namespace/web-shared": "0.1.0"
   },
   "peerDependencies": {
-    "@next/eslint-plugin-next": "13.2.4",
+    "@next/eslint-plugin-next": "14.0.1",
     "axios": "^1.6.1",
     "axios-retry": "^3.8.1",
     "immer": "^10.0.3",
     "jest-fail-on-console": "^3.0.2",
     "localforage": "^1.10.0",
     "lodash": "^4.17.21",
-    "next": "^13.2.4",
+    "next": "^14.0.1",
     "next-redux-wrapper": "^8.1.0",
     "nprogress": "^0.2.0",
     "prop-types": "^15.8.1",

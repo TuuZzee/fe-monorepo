@@ -13,7 +13,6 @@
     "@namespace/storybook": "1.0.0"
   },
   "peerDependencies": {
-    "@next/font": "^13.2.4",
     "axios-retry": "^3.8.1",
     "axios": "^1.6.1",
     "framer-motion": "^10.16.4",
@@ -22,7 +21,7 @@
     "localforage": "^1.10.0",
     "lodash": "^4.17.21",
     "next-redux-wrapper": "^8.1.0",
-    "next": "^13.2.4",
+    "next": "^14.0.1",
     "prop-types": "^15.8.1",
     "qs": "^6.11.2",
     "react-dom": "^18.2.0",
