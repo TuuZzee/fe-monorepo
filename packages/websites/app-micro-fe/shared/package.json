@@ -15,7 +15,7 @@
   "peerDependencies": {
     "@next/font": "^13.2.4",
     "axios-retry": "^3.8.1",
-    "axios": "^1.6.0",
+    "axios": "^1.6.1",
     "framer-motion": "^10.16.4",
     "immer": "^10.0.3",
     "jest-fail-on-console": "^3.0.2",
@@ -32,6 +32,6 @@
     "react": "^18.2.0",
     "redux": "^4.2.1",
     "rsuite": "^5.43.0",
-    "styled-components": "^6.1.0"
+    "styled-components": "^6.1.1"
   }
 }

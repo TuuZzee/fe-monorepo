@@ -36,6 +36,6 @@
     "redux": "^4.2.1",
     "rsuite": "^5.43.0",
     "sass": "^1.69.5",
-    "styled-components": "^6.1.0"
+    "styled-components": "^6.1.1"
   }
 }

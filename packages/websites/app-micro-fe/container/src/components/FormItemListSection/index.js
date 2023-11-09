@@ -25,7 +25,7 @@ const FormItemListSection = function ({ addItem, items, itemType, removeItem, ti
 
   return (
     <SectionWrapper>
-      <SectionTitle>{intl.messages[titleKey]}</SectionTitle>
+      <SectionTitle>{intl.messages[titleKey]} test</SectionTitle>
       <div>
         <FlexboxGrid justify="center">
           <FlexboxGrid.Item>

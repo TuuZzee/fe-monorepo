@@ -26,7 +26,7 @@ const Template = function ({ todos }) {
 
   return (
     <TemplateWrapper>
-      <TemplateTitle>{intl.messages['template.title']}</TemplateTitle>
+      <TemplateTitle>{intl.messages['template.title']} POUET</TemplateTitle>
       <div>
         <FlexboxGrid justify="center">
           <FlexboxGrid.Item colSpan={6}>
