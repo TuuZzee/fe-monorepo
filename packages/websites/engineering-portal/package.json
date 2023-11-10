@@ -16,7 +16,7 @@
   "peerDependencies": {
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
-    "@next/eslint-plugin-next": "14.0.1",
+    "@next/eslint-plugin-next": "14.0.2",
     "@reduxjs/toolkit": "^1.9.7",
     "@tailwindcss/forms": "^0.5.6",
     "@tailwindcss/line-clamp": "^0.4.4",
@@ -30,7 +30,7 @@
     "js-cookie": "^3.0.5",
     "localforage": "^1.10.0",
     "lodash": "^4.17.21",
-    "next": "^14.0.1",
+    "next": "^14.0.2",
     "next-redux-wrapper": "^8.1.0",
     "nprogress": "^0.2.0",
     "postcss": "^8.4.31",
