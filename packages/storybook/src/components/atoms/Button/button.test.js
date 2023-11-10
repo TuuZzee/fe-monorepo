@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { composeStories } from '@storybook/testing-react';
+import { composeStories } from '@storybook/react';
 import { render, screen } from '@testing-library/react';
 
-import * as stories from '../../../../stories/button/button.stories';
+import * as stories from '../../../../stories/atoms/button/button.stories';
 
 const { Primary, SecondaryFull, ButtonWithIconTemplate, PillSmallButtonTemplate } =
   composeStories(stories);

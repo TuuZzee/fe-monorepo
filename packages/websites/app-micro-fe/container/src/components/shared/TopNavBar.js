@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 
 import { useRouter } from 'next/router';
-import { Navbar, Nav, Dropdown, Toggle } from 'rsuite';
+import { Navbar, Nav, Toggle } from 'rsuite';
 
 import { LocaleContext } from '@namespace/web-shared/contexts/LocaleContext';
 import { dark, light, UiUxContext } from '@namespace/web-shared/contexts/UiUxContext';
@@ -36,10 +36,10 @@ const TopNavBar = function () {
           </div>
         </Nav>
         <Nav pullRight>
-          <Dropdown title={currentLocale} trigger="click">
-            <Dropdown.Item onSelect={() => updateLocale(en)}>{en}</Dropdown.Item>
-            <Dropdown.Item onSelect={() => updateLocale(ko)}>{ko}</Dropdown.Item>
-          </Dropdown>
+          <Nav.Menu title={currentLocale}>
+            <Nav.Item onSelect={() => updateLocale(en)}>{en}</Nav.Item>
+            <Nav.Item onSelect={() => updateLocale(ko)}>{ko}</Nav.Item>
+          </Nav.Menu>
         </Nav>
       </Nav>
     </Navbar>

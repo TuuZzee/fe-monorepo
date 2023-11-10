@@ -21,8 +21,9 @@ module.exports = {
           packageName.includes('websites/shared') ? '' : 'src/'
         }$1`,
       },
-      collectCoverage: true,
-      collectCoverageFrom: [`**/*.js, jsx`],
+      // Enable for coverage collection / publish
+      // collectCoverage: true,
+      // collectCoverageFrom: [`**/*.js, jsx`],
       moduleDirectories: ['node_modules'],
       modulePaths: [
         `<rootDir>/packages/${packageName}/${

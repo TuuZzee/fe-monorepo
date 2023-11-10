@@ -69,7 +69,7 @@ const Example: FC = function () {
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <Dialog.Panel className="relative flex w-full max-w-xs flex-1 flex-col bg-indigo-700 pt-5 pb-4">
+              <Dialog.Panel className="relative flex w-full max-w-xs flex-1 flex-col bg-indigo-700 pb-4 pt-5">
                 <Transition.Child
                   as={Fragment}
                   enter="ease-in-out duration-300"
@@ -79,7 +79,7 @@ const Example: FC = function () {
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
                 >
-                  <div className="absolute top-1 right-0 -mr-14 p-1">
+                  <div className="absolute right-0 top-1 -mr-14 p-1">
                     <button
                       className="flex h-12 w-12 items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-white"
                       onClick={() => setMobileMenuOpen(false)}
@@ -110,7 +110,7 @@ const Example: FC = function () {
                             item.current
                               ? 'bg-indigo-800 text-white'
                               : 'text-indigo-100 hover:bg-indigo-800 hover:text-white'
-                          } group flex items-center rounded-md py-2 px-3 text-sm font-medium`}
+                          } group flex items-center rounded-md px-3 py-2 text-sm font-medium`}
                         >
                           <item.icon
                             aria-hidden="true"

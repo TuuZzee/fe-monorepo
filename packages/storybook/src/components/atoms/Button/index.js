@@ -3,25 +3,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import defaultChildrenProps from '@namespace/web-shared/propTypes/common';
-
 import { colors } from '@namespace/web-shared/styles/theme';
 
 import LoaderIcon from '../LoaderIcon';
 
 import { sizes, types } from './props';
-
 import { ButtonWrapper, ButtonIcon } from './styled';
 
 const Button = function (props) {
-  const { isLoading, children, isDisabled, bgType, id, ...otherProps } = props;
+  const { bgColor, bgType, children, id, isDisabled, isLoading, ...otherProps } = props;
 
   if (isLoading) {
     return (
       <ButtonWrapper
+        $bgColor={bgColor}
+        $bgType={bgType}
         aria-busy="true"
-        bgType={bgType}
         id={`${id}-button`}
-        style={{ padding: '0' }}
         type="button"
         {...otherProps}
       >
@@ -32,12 +30,13 @@ const Button = function (props) {
 
   return (
     <ButtonWrapper
-      bgType={bgType}
+      $bgColor={bgColor}
+      $bgType={bgType}
+      aria-disabled={isDisabled}
+      disabled={isDisabled}
       id={`${id}-button`}
       type="button"
       {...otherProps}
-      aria-disabled={isDisabled}
-      disabled={isDisabled}
     >
       {children}
     </ButtonWrapper>
@@ -48,22 +47,22 @@ Button.propTypes = {
   bgColor: PropTypes.string,
   bgType: PropTypes.oneOf(Object.values(types)),
   children: defaultChildrenProps,
+  id: PropTypes.string,
   isDisabled: PropTypes.bool,
   isLoading: PropTypes.bool,
   onClick: PropTypes.func,
   size: PropTypes.oneOf(Object.values(sizes)),
-  id: PropTypes.string,
 };
 
 Button.defaultProps = {
   bgColor: `${colors.blueH27B4EB}`,
   bgType: types.primaryDefault,
   children: 'Button',
+  id: '',
   isDisabled: false,
   isLoading: false,
   onClick: null,
   size: sizes.fullLarge,
-  id: '',
 };
 
 export default Button;
@@ -89,6 +88,7 @@ ButtonWithIcon.defaultProps = {
 
 export const LargeButton = function (props) {
   const { children, ...otherProps } = props;
+
   return (
     <Button size={sizes.large} {...otherProps}>
       {children}

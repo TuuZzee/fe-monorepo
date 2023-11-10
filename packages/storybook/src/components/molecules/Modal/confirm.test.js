@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { composeStories } from '@storybook/testing-react';
+import { composeStories } from '@storybook/react';
 import { render, screen } from '@testing-library/react';
 
 import mockMutationObserver from '@namespace/web-shared/jest/mock/mutationObserver';
 
-import * as stories from '../../../../stories/modal/modal.stories';
+import * as stories from '../../../../stories/molecules/modal/modal.stories';
 
 const { ConfirmModalTemplate } = composeStories(stories);
 

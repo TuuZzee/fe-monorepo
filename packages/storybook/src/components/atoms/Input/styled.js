@@ -24,8 +24,8 @@ export const InputCloseIcon = styled(CloseIcon)`
 export const InputFormWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  ${({ full }) =>
-    full
+  ${({ $full }) =>
+    $full
       ? css`
           width: 100%;
         `
@@ -53,7 +53,7 @@ export const InputWrapperDiv = styled(InputWrapper)`
   }
 
   ${props =>
-    props.error &&
+    props.$hasError &&
     css`
       border: 2px solid ${colors.redHDB4437};
     `};
@@ -70,13 +70,15 @@ export const InputWrapperDiv = styled(InputWrapper)`
 export const InputTag = styled.input`
   font-weight: 500;
   font-size: ${props =>
-    props.type === 'password' && !props.isShown && props.value !== '' ? '30px' : '16px'};
+    props.type === 'password' && !props.$isShown && props.value !== '' ? '30px' : '16px'};
   line-height: 24px;
   color: ${colors.grayH343A3E};
   width: ${props =>
-    `calc(100% - 18px - ${props.iconLeft ? '36px' : '0px'} - ${props.iconRight ? '36px' : '0px'})`};
-  padding-left: ${props => (props.iconLeft ? '36px' : '0px')};
-  padding-right: ${props => (props.iconRight ? '36px' : '0px')};
+    `calc(100% - 18px - ${props.$iconLeft ? '36px' : '0px'} - ${
+      props.$iconRight ? '36px' : '0px'
+    })`};
+  padding-left: ${props => (props.$iconLeft ? '36px' : '0px')};
+  padding-right: ${props => (props.$iconRight ? '36px' : '0px')};
   height: 24px;
   border: none;
   outline: none;
@@ -123,7 +125,7 @@ export const IconLeft = styled.div`
 export const TextWrapper = styled(TextP2)`
   min-height: 20px;
   margin-top: 12px;
-  color: ${props => (props.error ? colors.redHDB4437 : colors.grayH999999)};
+  color: ${props => (props.$hasError ? colors.redHDB4437 : colors.grayH999999)};
 `;
 
 export const InputGroup = styled(RsuiteInputGroup)`

@@ -7,13 +7,13 @@ export const sharedGlobalStyles = css`
     font-size: 16px;
   }
 
-  @media (max-width: 801px) {
+  @media (480px < width < 801px) {
     :root {
       font-size: 0;
     }
   }
 
-  @media (max-width: 480px) {
+  @media (1px < width < 481px) {
     :root {
       font-size: 14px;
     }

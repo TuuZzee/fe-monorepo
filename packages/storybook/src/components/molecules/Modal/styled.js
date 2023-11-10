@@ -53,8 +53,7 @@ export const ModalTitle = styled(RSuiteModal.Title)`
   font-size: 32px;
   line-height: 40px;
   color: ${colors.grayH212528};
-  margin-block-start: auto;
-  margin-block-end: auto;
+  margin-block: auto;
   margin-bottom: 16px;
   white-space: normal;
 `;

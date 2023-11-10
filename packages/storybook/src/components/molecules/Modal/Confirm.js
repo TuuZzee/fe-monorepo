@@ -10,22 +10,22 @@ import { Actions, ConfirmButton } from './styled';
 import Modal from './index';
 
 const Confirm = function ({
-  onClose,
-  open,
-  title,
-  description,
-  cancelText,
   cancelButtonType,
-  submitText,
+  cancelText,
+  children,
+  description,
+  id,
+  imageSrc,
+  isSubmitting,
+  onClose,
+  onSubmit,
+  open,
+  showCloseIcon,
+  size,
   submitButtonType,
   submitIsDisabled,
-  onSubmit,
-  children,
-  showCloseIcon,
-  imageSrc,
-  id,
-  isSubmitting,
-  size,
+  submitText,
+  title,
   ...props
 }) {
   return (
@@ -42,11 +42,11 @@ const Confirm = function ({
       actions={
         <Actions>
           <ConfirmButton
-            aria-label="Cancel"
-            onClick={onClose}
-            bgType={cancelButtonType}
             // isDisabled={submitIsDisabled}
+            aria-label="Cancel"
+            bgType={cancelButtonType}
             id="cancel"
+            onClick={onClose}
           >
             {cancelText}
           </ConfirmButton>

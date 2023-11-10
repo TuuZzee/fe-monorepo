@@ -1,11 +1,8 @@
 import React from 'react';
 
-import Card, { CardWithText } from '../../src/components/molecules/Card';
-
-import { projects, componentTypes } from '../titlePath';
+import Card, { CardWithText } from '../../../src/components/molecules/Card';
 
 export default {
-  title: `${projects.template}/${componentTypes.molecule}/Card`,
   component: Card,
   argTypes: {
     children: {

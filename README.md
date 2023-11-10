@@ -40,15 +40,15 @@ that might not yet share the same stack in a specific namespace in `/legacy`. Mo
 ## Requirements
 
 You need to have `yarn` installed. Recommend using [n](https://github.com/tj/n) to manage node
-version more easily. Node version recommended: v16.17.1
+version more easily. Node version recommended: v18.18.2
 
 ```sh
 # Install npm
 brew install npm
 # Install n
 npm install -g n
-# Install node version v16.17.1
-n v16.17.1
+# Install node version v18.18.2
+n v18.18.2
 # Install yarn
 npm install --global yarn
 # Install lerna

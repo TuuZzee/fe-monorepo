@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { composeStories } from '@storybook/testing-react';
+import { composeStories } from '@storybook/react';
 import { render, screen, fireEvent } from '@testing-library/react';
 
-import * as stories from '../../../../stories/input/input.stories';
+import * as stories from '../../../../stories/atoms/input/input.stories';
 
 const { DefaultTemplate, PasswordInputTemplate, ErrorInputTemplate, InputWithLeftIconTemplate } =
   composeStories(stories);
