@@ -14,6 +14,7 @@ module.exports = {
     'plugin:tailwindcss/recommended',
     'plugin:workspaces/recommended',
     'prettier',
+    'plugin:storybook/recommended',
   ],
   globals: { Atomics: 'readonly', SharedArrayBuffer: 'readonly', google: 'readonly' },
   parser: '@babel/eslint-parser',

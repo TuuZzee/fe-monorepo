@@ -7,14 +7,10 @@ import {
   TitleH4,
   TitleH5,
   TitleH6,
-} from '../../src/components/atoms/Typography';
-
-import { sizes, fonts } from '../../src/components/atoms/Typography/props';
-
-import { projects, componentTypes } from '../titlePath';
+} from '../../../src/components/atoms/Typography';
+import { sizes, fonts } from '../../../src/components/atoms/Typography/props';
 
 export default {
-  title: `${projects.template}/${componentTypes.atom}/Typography`,
   component: TitleH1,
   argTypes: {
     size: {
@@ -36,7 +32,7 @@ export const HeadingH1 = Template.bind({});
 HeadingH1.args = {
   size: sizes.h1F48px,
   font: fonts.medium,
-  children: "H1 heading example",
+  children: 'H1 heading example',
 };
 
 export const HeadingH2 = function (args) {
@@ -45,7 +41,7 @@ export const HeadingH2 = function (args) {
 HeadingH2.args = {
   size: sizes.h2F32px,
   font: fonts.bold,
-  children: "H2 heading example",
+  children: 'H2 heading example',
 };
 
 export const HeadingH3 = function (args) {
@@ -54,7 +50,7 @@ export const HeadingH3 = function (args) {
 HeadingH3.args = {
   size: sizes.h3F24px,
   font: fonts.bold,
-  children: "H3 heading example",
+  children: 'H3 heading example',
 };
 
 export const HeadingH4 = function (args) {
@@ -63,7 +59,7 @@ export const HeadingH4 = function (args) {
 HeadingH4.args = {
   size: sizes.h4F18px,
   font: fonts.medium,
-  children: "H4 heading example",
+  children: 'H4 heading example',
 };
 
 export const HeadingH5 = function (args) {
@@ -72,7 +68,7 @@ export const HeadingH5 = function (args) {
 HeadingH5.args = {
   size: sizes.h5F16px,
   font: fonts.medium,
-  children: "H5 heading example",
+  children: 'H5 heading example',
 };
 
 export const HeadingH6 = function (args) {
@@ -81,5 +77,5 @@ export const HeadingH6 = function (args) {
 HeadingH6.args = {
   size: sizes.h6F16px,
   font: fonts.regular,
-  children: "H6 heading example",
+  children: 'H6 heading example',
 };

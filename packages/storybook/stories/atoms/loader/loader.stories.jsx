@@ -1,13 +1,10 @@
 import React from 'react';
 
-import { types } from '../../src/components/atoms/Button/props';
-import LoaderIcon from '../../src/components/atoms/LoaderIcon';
-import { sizes } from '../../src/components/atoms/LoaderIcon/props';
-
-import { projects, componentTypes } from '../titlePath';
+import { types } from '../../../src/components/atoms/Button/props';
+import LoaderIcon from '../../../src/components/atoms/LoaderIcon';
+import { sizes } from '../../../src/components/atoms/LoaderIcon/props';
 
 export default {
-  title: `${projects.template}/${componentTypes.atom}/Loader`,
   component: LoaderIcon,
   argTypes: {
     bgType: {

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { composeStories } from '@storybook/testing-react';
+import { composeStories } from '@storybook/react';
 import { render, screen, getByText } from '@testing-library/react';
 
-import * as stories from '../../../../stories/card/card.stories';
+import * as stories from '../../../../stories/molecules/card/card.stories';
 
 const { CardTemplate, CardWithTextTemplate } = composeStories(stories);
 
