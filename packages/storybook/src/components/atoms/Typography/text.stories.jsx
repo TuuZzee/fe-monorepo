@@ -1,15 +1,8 @@
 import React from 'react';
 
-import Text, {
-  TextP1,
-  TextP2,
-  TextP3,
-  TextP4,
-  TextP5,
-  TextP6,
-  TextP7,
-} from '../../../src/components/atoms/Typography';
-import { sizes, fonts } from '../../../src/components/atoms/Typography/props';
+import { sizes, fonts } from './props';
+
+import Text, { TextP1, TextP2, TextP3, TextP4, TextP5, TextP6, TextP7 } from '.';
 
 export default {
   component: Text,

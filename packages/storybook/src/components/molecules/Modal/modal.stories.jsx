@@ -1,8 +1,9 @@
 import React from 'react';
 
-import Confirm from '../../../src/components/molecules/Modal/Confirm';
-import { types } from '../../../src/components/atoms/Button/props';
-import { sizes } from '../../../src/components/molecules/Modal/propTypes';
+import { types } from '../../atoms/Button/props';
+
+import Confirm from './Confirm';
+import { sizes } from './propTypes';
 
 export default {
   component: Confirm,

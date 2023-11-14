@@ -2,8 +2,9 @@ import React from 'react';
 
 import { colors } from '@namespace/web-shared/styles/theme';
 
-import { TextP3 } from '../../src/components/atoms/Typography';
-import * as icons from '../../src/components/Icons';
+import { TextP3 } from '../atoms/Typography';
+
+import * as icons from '.';
 
 export default {
   component: icons.CloseIcon,

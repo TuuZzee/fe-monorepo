@@ -3,10 +3,9 @@ import React from 'react';
 import { composeStories } from '@storybook/react';
 import { render, screen } from '@testing-library/react';
 
-import * as textStories from '../../../../stories/atoms/typography/text.stories';
-import * as titleStories from '../../../../stories/atoms/typography/title.stories';
-
 import { sizes, fonts } from './props';
+import * as textStories from './text.stories';
+import * as titleStories from './title.stories';
 
 const { HeadingH1 } = composeStories(titleStories);
 const { ParagraphP1 } = composeStories(textStories);

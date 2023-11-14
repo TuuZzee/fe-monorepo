@@ -3,7 +3,7 @@ import React from 'react';
 import { composeStories } from '@storybook/react';
 import { render, screen } from '@testing-library/react';
 
-import * as stories from '../../../../stories/atoms/button/button.stories';
+import * as stories from './button.stories';
 
 const { Primary, SecondaryFull, ButtonWithIconTemplate, PillSmallButtonTemplate } =
   composeStories(stories);

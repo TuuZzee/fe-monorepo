@@ -106,7 +106,6 @@
     "@storybook/blocks": "^7.5.3",
     "@storybook/builder-webpack5": "^7.5.3",
     "@storybook/nextjs": "^7.5.3",
-    "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/react": "^7.5.3",
     "@storybook/testing-library": "^0.2.2",
     "@testing-library/jest-dom": "^6.1.4",

@@ -5,7 +5,7 @@ import { render, screen } from '@testing-library/react';
 
 import mockMutationObserver from '@namespace/web-shared/jest/mock/mutationObserver';
 
-import * as stories from '../../../../stories/molecules/modal/modal.stories';
+import * as stories from './modal.stories';
 
 const { ConfirmModalTemplate } = composeStories(stories);
 

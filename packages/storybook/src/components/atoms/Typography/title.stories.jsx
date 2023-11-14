@@ -1,14 +1,8 @@
 import React from 'react';
 
-import {
-  TitleH1,
-  TitleH2,
-  TitleH3,
-  TitleH4,
-  TitleH5,
-  TitleH6,
-} from '../../../src/components/atoms/Typography';
-import { sizes, fonts } from '../../../src/components/atoms/Typography/props';
+import { sizes, fonts } from './props';
+
+import { TitleH1, TitleH2, TitleH3, TitleH4, TitleH5, TitleH6 } from '.';
 
 export default {
   component: TitleH1,

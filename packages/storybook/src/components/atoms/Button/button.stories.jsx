@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { sizes, types } from './props';
+
 import Button, {
   ButtonWithIcon,
   LargeButton,
@@ -9,8 +11,7 @@ import Button, {
   PillSmallButton,
   FullLargeButton,
   FullMediumButton,
-} from '../../../src/components/atoms/Button';
-import { sizes, types } from '../../../src/components/atoms/Button/props';
+} from '.';
 
 export default {
   component: Button,
