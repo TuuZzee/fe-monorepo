@@ -1,11 +1,7 @@
 import React from 'react';
 
-import types from '../../../src/components/atoms/Input/props';
-import {
-  AutocompleteInput,
-  InputWithLeftIcon,
-  InputDefault,
-} from '../../../src/components/atoms/Input/storybookExamples';
+import types from './props';
+import { AutocompleteInput, InputWithLeftIcon, InputDefault } from './storybookExamples';
 
 export default {
   component: InputDefault,

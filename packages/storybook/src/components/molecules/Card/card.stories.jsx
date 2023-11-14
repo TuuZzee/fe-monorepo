@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card, { CardWithText } from '../../../src/components/molecules/Card';
+import Card, { CardWithText } from '.';
 
 export default {
   component: Card,

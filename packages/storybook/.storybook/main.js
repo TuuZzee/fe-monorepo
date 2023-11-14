@@ -1,8 +1,4 @@
 module.exports = {
-  stories: [
-    // "../stories/**/*.stories.mdx",
-    '../stories/**/*.stories.@(js|jsx|ts|tsx)',
-  ],
   addons: [
     '@storybook/addon-actions',
     '@storybook/addon-essentials',
@@ -11,12 +7,21 @@ module.exports = {
     '@storybook/addon-onboarding',
     'storybook-react-intl',
   ],
-  framework: {
-    name: '@storybook/nextjs',
-    options: {},
-  },
+  docs: { autodocs: 'tag' },
   core: {
     builder: 'webpack5',
     disableTelemetry: true,
   },
+  framework: {
+    name: '@storybook/nextjs',
+    options: {},
+  },
+  // [Note]: Enable and add folder if any asset is needed
+  // staticDirs: ['../public'],
+  stories: [
+    // [Note]: Enable if any story is added
+    // '../src/**/*.mdx',
+    '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)',
+  ],
+  storyStoreV7: false,
 };

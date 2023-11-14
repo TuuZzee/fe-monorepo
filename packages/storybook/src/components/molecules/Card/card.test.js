@@ -3,7 +3,7 @@ import React from 'react';
 import { composeStories } from '@storybook/react';
 import { render, screen, getByText } from '@testing-library/react';
 
-import * as stories from '../../../../stories/molecules/card/card.stories';
+import * as stories from './card.stories';
 
 const { CardTemplate, CardWithTextTemplate } = composeStories(stories);
 

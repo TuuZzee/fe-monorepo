@@ -3,7 +3,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import defaultChildrenProps from '@namespace/web-shared/propTypes/common';
-
 import { colors } from '@namespace/web-shared/styles/theme';
 
 import { TextP1, TitleH2, TitleH4 } from '../../atoms/Typography';

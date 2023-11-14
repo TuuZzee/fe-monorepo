@@ -4,12 +4,9 @@ import { render, screen } from '@testing-library/react';
 
 import CloseIcon from './CloseIcon';
 import CloseModalIcon from './CloseModalIcon';
-
 import EyeCrossedIcon from './EyeCrossedIcon';
 import EyeIcon from './EyeIcon';
-
 import RectangleIcon from './RectangleIcon';
-
 import SearchIcon from './SearchIcon';
 
 const testComponent = (component, name, ariaLabel, defaultProps) => {
