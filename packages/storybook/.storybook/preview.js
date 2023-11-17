@@ -1,10 +1,10 @@
 import React from 'react';
+
 import reactIntlProps from '../src/utils/reactIntlProps.js';
+import GlobalStyles from '../styles/globalStyled';
 
 import '../styles/globals.css';
 import 'rsuite/dist/rsuite.min.css';
-
-import GlobalStyles from '../styles/globalStyled';
 
 export const decorators = [
   Story => (
@@ -28,5 +28,8 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
+  },
+  backgrounds: {
+    default: 'black',
   },
 };

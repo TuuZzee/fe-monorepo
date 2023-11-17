@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { colors } from '@namespace/web-shared/styles/theme';
 
 import RectangleIcon from '../../Icons/RectangleIcon';
-
 import SearchIcon from '../../Icons/SearchIcon';
 
 import { autocompleteSearchArray } from './props';

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "storybook dev -p 6006",
     "jsLint": "eslint --fix '**/*.js'",
-    "buildAndExport": "storybook build"
+    "buildAndExport": "storybook build --output-dir ./build/deploy/out"
   },
   "dependencies": {
     "@namespace/web-shared": "0.1.0"
@@ -20,7 +20,6 @@
     "@storybook/blocks": "^7.5.3",
     "@storybook/builder-webpack5": "^7.5.3",
     "@storybook/nextjs": "^7.5.3",
-    "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/react": "^7.5.3",
     "@storybook/testing-library": "^0.2.2",
     "@testing-library/jest-dom": "^6.1.4",

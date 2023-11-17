@@ -15,9 +15,10 @@ jobs:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
       with:
-        node-version: '20.9.0'
-        cache: 'yarn'
-    - run: yarn install
+        node-version: 20.9.0
+        cache: yarn
+        cache-dependency-path: yarn.lock
+    - run: yarn
 
     - name: Validate Javascript files with Eslint
       run: yarn jsLint

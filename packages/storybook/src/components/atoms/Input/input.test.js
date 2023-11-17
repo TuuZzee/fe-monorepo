@@ -3,7 +3,7 @@ import React from 'react';
 import { composeStories } from '@storybook/react';
 import { render, screen, fireEvent } from '@testing-library/react';
 
-import * as stories from '../../../../stories/atoms/input/input.stories';
+import * as stories from './input.stories';
 
 const { DefaultTemplate, PasswordInputTemplate, ErrorInputTemplate, InputWithLeftIconTemplate } =
   composeStories(stories);
